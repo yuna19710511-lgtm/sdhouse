@@ -1,0 +1,10 @@
+.sdx1:hover { border-color:#14161A !important }
+.sdx2:hover { background:#fff !important }
+.sdx3:hover { background:rgba(255,255,255,0.12) !important }
+.sdx4:hover { background:#F7F5F2 !important }
+.sdx5:hover { background:#2A2E34 !important }
+.sdx6:focus { border-bottom-color:#4E7B93 !important }
+.sdx7:focus { border-color:#4E7B93 !important }
+
+.gtab { flex-shrink: 0; border: 1px solid rgba(20,22,26,0.16); padding: 14px 18px; min-height: 46px; font-size: 12.5px; letter-spacing: 0.02em; cursor: pointer; white-space: nowrap; background: none; color: #3A3E44; }
+.gtab-on { background: #14161A; color: #F7F5F2; border-color: #14161A; }
