@@ -25,3 +25,11 @@
 @media (max-width: 560px) {
   .g2, .g3, .g4 { grid-template-columns: minmax(0,1fr) !important; }
 }
+
+
+/* 한글 줄바꿈 — 단어 중간에서 끊기지 않게 */
+body, p, li, dt, dd, h1, h2, h3, div, span, a, figcaption {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+p, li, dd, h1, h2, h3 { text-wrap: pretty; }

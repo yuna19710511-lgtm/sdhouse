@@ -27,8 +27,8 @@
   [data-lang="en"] .i18n-en { display: revert !important; }
   [data-lang="en"] .i18n-ko { display: none !important; }
   @keyframes sdKen { from { transform: scale(1.06); } to { transform: scale(1); } }
-  @keyframes sdCycle3 { 0% { opacity: 0; } 12% { opacity: 1; } 33.3% { opacity: 1; } 45.3% { opacity: 0; } 100% { opacity: 0; } }
-  @keyframes sdKenLoop { 0% { transform: scale(1.045); } 45.3% { transform: scale(1); } 100% { transform: scale(1); } }
+  @keyframes sdCycle3 { 0% { opacity: 0; z-index: 3; } 11.9% { opacity: 1; z-index: 3; } 12% { opacity: 1; z-index: 2; } 45.3% { opacity: 1; z-index: 2; } 45.4% { opacity: 0; z-index: 1; } 100% { opacity: 0; z-index: 1; } }
+  @keyframes sdKenLoop { 0% { transform: scale(1.045); } 45.3% { transform: scale(1); } 45.4% { transform: scale(1.045); } 100% { transform: scale(1.045); } }
   @media (max-width: 900px) {
     [data-nav], [data-phone] { display: none !important; }
     [data-menubtn] { display: flex !important; }
@@ -84,14 +84,14 @@
   </header>
 
   <section id="top" style="position:relative;height:min(92vh,900px);min-height:560px;overflow:hidden;display:flex;align-items:flex-end">
-    <div style="position:absolute;inset:0;overflow:hidden;background:#2A2E34">
+    <div style="position:absolute;inset:0;overflow:hidden;background:#2A2E34 url(img-hero-lobby.jpg) center/cover no-repeat">
       <img src="img-hero-lobby.jpg" alt="이모션월 마감 로비" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:sdCycle3 15s cubic-bezier(0.4,0,0.6,1) infinite 0s, sdKenLoop 15s linear infinite 0s" />
       <img src="img-ew-pattern-1.jpg" alt="이모션월이 적용된 주거 공간" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:sdCycle3 15s cubic-bezier(0.4,0,0.6,1) infinite 5s, sdKenLoop 15s linear infinite 5s" />
       <img src="img-prod-emotionwall.jpg" alt="칼라가토 마블 벽면이 적용된 거실" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:sdCycle3 15s cubic-bezier(0.4,0,0.6,1) infinite 10s, sdKenLoop 15s linear infinite 10s" />
-      <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(12,14,17,0.5) 0%,rgba(12,14,17,0.24) 52%,rgba(12,14,17,0.04) 100%)"></div>
-      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(12,14,17,0.42) 0%,rgba(12,14,17,0) 42%)"></div>
+      <div style="position:absolute;inset:0;z-index:4;background:linear-gradient(100deg,rgba(12,14,17,0.5) 0%,rgba(12,14,17,0.24) 52%,rgba(12,14,17,0.04) 100%)"></div>
+      <div style="position:absolute;inset:0;z-index:4;background:linear-gradient(to top,rgba(12,14,17,0.42) 0%,rgba(12,14,17,0) 42%)"></div>
     </div>
-    <div style="position:relative;z-index:2;max-width:1340px;margin:0 auto;padding:0 clamp(18px,4vw,32px) clamp(56px,8vw,96px);width:100%">
+    <div style="position:relative;z-index:5;max-width:1340px;margin:0 auto;padding:0 clamp(18px,4vw,32px) clamp(56px,8vw,96px);width:100%">
       <div style="width:56px;height:1px;background:rgba(255,255,255,0.6);margin-bottom:26px;transform-origin:left;animation:sdRule 1s cubic-bezier(0.16,1,0.3,1) 0.15s both"></div>
       <div style="font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:#C9D8E0;margin-bottom:26px;animation:sdLine 1s cubic-bezier(0.16,1,0.3,1) 0.3s both">Interior Finishing Materials</div>
       <h1 style="margin:0 0 26px;font-family:'Noto Serif KR',serif;font-weight:300;color:#fff;font-size:clamp(28px,4.6vw,64px);line-height:1.3;letter-spacing:-0.01em;text-wrap:pretty;max-width:16em;text-shadow:0 2px 30px rgba(12,14,17,0.35)">
@@ -112,7 +112,7 @@
         </a>
       </div>
     </div>
-    <div data-float="true" style="position:absolute;right:32px;bottom:96px;z-index:2;text-align:right;color:rgba(255,255,255,0.72);font-size:11px;letter-spacing:0.14em;line-height:2;animation:sdLine 1.2s cubic-bezier(0.16,1,0.3,1) 1.3s both">
+    <div data-float="true" style="position:absolute;right:32px;bottom:96px;z-index:5;text-align:right;color:rgba(255,255,255,0.72);font-size:11px;letter-spacing:0.14em;line-height:2;animation:sdLine 1.2s cubic-bezier(0.16,1,0.3,1) 1.3s both">
       <div>EMOTION WALL · TEMBOUR BOARD · LDW+ STILE</div>
       <div style="opacity:0.7">Wall, ceiling and floor finishes</div>
     </div>
