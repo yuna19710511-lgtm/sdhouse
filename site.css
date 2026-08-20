@@ -13,3 +13,15 @@
 /* 셀 경계선 — 빈 칸에 배경이 비치지 않도록 각 셀에 직접 그립니다 */
 .hairgrid > * { box-shadow: 0 0 0 1px rgba(20,22,26,0.12); }
 .hairgrid-dark > * { box-shadow: 0 0 0 1px rgba(255,255,255,0.12); }
+
+
+/* 항목 그리드 — 균형 있게 줄 맞춤 */
+.g2 { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+.g3 { grid-template-columns: repeat(3, minmax(0,1fr)) !important; }
+.g4 { grid-template-columns: repeat(4, minmax(0,1fr)) !important; }
+@media (max-width: 1000px) {
+  .g3, .g4 { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+}
+@media (max-width: 560px) {
+  .g2, .g3, .g4 { grid-template-columns: minmax(0,1fr) !important; }
+}
