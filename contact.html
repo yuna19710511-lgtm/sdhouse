@@ -324,7 +324,7 @@
   var el = document.getElementById('sdmap');
   if (!el || typeof L === 'undefined') return;
   var pos = [37.8190, 127.0630];
-  var map = L.map(el, { scrollWheelZoom: false }).setView(pos, 15);
+  var map = L.map(el, { scrollWheelZoom: true, dragging: true, tap: true }).setView(pos, 15);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; OpenStreetMap'
