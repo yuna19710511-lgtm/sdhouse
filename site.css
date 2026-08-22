@@ -34,11 +34,23 @@ body, p, li, dt, dd, h1, h2, h3, div, span, a, figcaption {
 }
 p, li, dd, h1, h2, h3 { text-wrap: pretty; }
 
-/* 종합 카다로그 제품 그리드 — 4열 고정 */
-.catgrid { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+/* 종합 카다로그 제품 그리드 — 품목 수에 맞춰 열 수 */
+.catgrid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.catgrid.c3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.catgrid.c5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .catgrid > a { background: #fff; box-shadow: 0 1px 3px rgba(20,22,26,0.06); }
-@media (max-width: 1080px) { .catgrid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; } }
-@media (max-width: 560px) { .catgrid { grid-template-columns: 1fr !important; } }
+@media (max-width: 1200px) { .catgrid.c5 { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 1080px) { .catgrid, .catgrid.c3, .catgrid.c5 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .catgrid, .catgrid.c3, .catgrid.c5 { grid-template-columns: 1fr; } }
+
+/* 제품 사진 갤러리 — 사진 수에 맞춰 줄 균형 */
+@media (max-width: 900px) { .photogrid.c3, .photogrid.c4 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; } }
+@media (max-width: 560px) { .photogrid { grid-template-columns: 1fr !important; } }
+
+/* 주요 거래처 — 5열 × 2줄 */
+.clientgrid { grid-template-columns: repeat(5, minmax(0, 1fr)) !important; }
+@media (max-width: 1080px) { .clientgrid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; } }
+@media (max-width: 720px) { .clientgrid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; } }
 
 /* 특징 · 시공순서 카드 — 개수에 맞춰 줄 균형 */
 .feat3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
