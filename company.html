@@ -34,6 +34,8 @@
   }
 </style>
 <link rel="stylesheet" href="site.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 <body>
 <div data-lang="ko" style="min-height:100vh">
@@ -244,7 +246,7 @@
         <a href="contact.html" style="display:inline-flex;align-items:center;gap:10px;background:#14161A;color:#F7F5F2;padding:17px 30px;font-size:12.5px;letter-spacing:0.14em;text-transform:uppercase" class="sdx5"><span class="i18n-ko">문의 남기기</span><span class="i18n-en">Send an enquiry</span></a>
       </div>
       <div style="border:1px solid rgba(20,22,26,0.14)">
-        <iframe title="에스디하우스 위치" src="https://www.openstreetmap.org/export/embed.html?bbox=127.0450%2C37.8090%2C127.0810%2C37.8290&amp;layer=mapnik&amp;marker=37.8190%2C127.0630" style="width:100%;height:clamp(240px,32vw,360px);border:0;display:block" loading="lazy"></iframe>
+        <div id="sdmap" style="width:100%;flex:1;min-height:clamp(260px,30vw,420px);background:#EFEBE5"></div></div>
         <div style="padding:18px 22px;font-size:12.5px;color:#6B655D;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 16px;background:#fff">
           <span><span class="i18n-ko">본사 · 경기도 양주시 선하로 191</span><span class="i18n-en">HQ · Yangju, Gyeonggi-do</span></span>
           <a href="https://map.naver.com/p/search/양주시 선하로 191" target="_blank" rel="noopener" style="color:#4E7B93"><span class="i18n-ko">길찾기</span><span class="i18n-en">Directions</span> →</a>
@@ -259,7 +261,7 @@
         <div style="display:flex;align-items:center;gap:14px;margin-bottom:22px">
           <img src="logo-sdhaus-light.png" alt="SD HAUS" style="height:34px;width:auto;display:block" />
         </div>
-        <p style="margin:0;font-size:13px;line-height:1.95;font-weight:300;max-width:26em"><span class="i18n-ko">(주)에스디하우스 — 인테리어 마감재 종합 공급. 설계부터 납품까지 하나의 창구로 대응합니다.</span><span class="i18n-en">SD HAUS — interior finishing materials, specified and delivered through one point of contact.</span></p>
+        <p style="margin:0;font-size:13px;line-height:1.95;font-weight:300;max-width:26em"><span class="i18n-ko">(주)에스디하우스 — 인테리어 마감재 종합 공급.<br />설계부터 납품까지 하나의 창구로 대응합니다.</span><span class="i18n-en">SD HAUS — interior finishing materials, specified and delivered through one point of contact.</span></p>
       </div>
       <div style="font-size:13px;line-height:2.1">
         <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:16px">Site</div>
@@ -308,5 +310,25 @@
 <script src="site.js"></script>
 <button id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="맨 위로" style="position:fixed;right:clamp(14px,3vw,28px);bottom:calc(clamp(14px,3vw,28px) + 62px);z-index:65;width:48px;height:48px;border:1px solid rgba(20,22,26,0.18);background:rgba(247,245,242,0.92);backdrop-filter:blur(8px);color:#14161A;font-size:17px;line-height:1;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s">↑</button>
 <script>(function(){var b=document.getElementById('toTop');function u(){var on=window.scrollY>600;b.style.opacity=on?'1':'0';b.style.pointerEvents=on?'auto':'none';}window.addEventListener('scroll',u,{passive:true});u();})();</script>
+<script>
+(function(){
+  var el = document.getElementById('sdmap');
+  if (!el || typeof L === 'undefined') return;
+  var pos = [37.8190, 127.0630];
+  var map = L.map(el, { scrollWheelZoom: false }).setView(pos, 15);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; OpenStreetMap'
+  }).addTo(map);
+  var icon = L.divIcon({
+    className: '',
+    iconSize: [30, 44],
+    iconAnchor: [15, 44],
+    html: '<div style="display:flex;flex-direction:column;align-items:center"><div style="width:26px;height:26px;border-radius:50%;background:#C8102E;border:4px solid #fff;box-shadow:0 2px 10px rgba(0,0,0,0.45)"></div><div style="width:3px;height:14px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div>'
+  });
+  L.marker(pos, { icon: icon, title: '(주)에스디하우스' }).addTo(map)
+    .bindPopup('(주)에스디하우스<br />경기도 양주시 선하로 191');
+})();
+</script>
 </body>
 </html>
