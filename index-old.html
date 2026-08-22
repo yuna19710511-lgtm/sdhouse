@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>(주)에스디하우스 | 인테리어 마감재 종합 공급</title>
+<meta name="description" content="(주)에스디하우스는 불연 벽장재 이모션월, SD 라인보드, LDW+ 스타일 바닥재 등 인테리어 마감재를 설계 단계부터 납품까지 공급하는 종합 마감재 파트너입니다." />
+<meta property="og:site_name" content="(주)에스디하우스" />
+<meta property="og:title" content="(주)에스디하우스 | 인테리어 마감재 종합 공급" />
+<meta property="og:description" content="인테리어 마감재 종합 공급 · (주)에스디하우스" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="img-hero-lobby.jpg" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F7F5F2; color: #14161A; font-family: "Pretendard Variable", Pretendard, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #14161A; text-decoration: none; }
+  a:hover { color: #4E7B93; }
+  img { display: block; }
+  input, textarea, button, select { font-family: inherit; }
+  .i18n-en { display: none !important; }
+  [data-lang="en"] .i18n-en { display: revert !important; }
+  [data-lang="en"] .i18n-ko { display: none !important; }
+  @keyframes sdKen { from { transform: scale(1.06); } to { transform: scale(1); } }
+  @keyframes sdCycle3 { 0% { opacity: 0; z-index: 3; } 11.9% { opacity: 1; z-index: 3; } 12% { opacity: 1; z-index: 2; } 45.3% { opacity: 1; z-index: 2; } 45.4% { opacity: 0; z-index: 1; } 100% { opacity: 0; z-index: 1; } }
+  @keyframes sdKenLoop { 0% { transform: scale(1.045); } 45.3% { transform: scale(1); } 45.4% { transform: scale(1.045); } 100% { transform: scale(1.045); } }
+  @media (max-width: 900px) {
+    [data-nav], [data-phone] { display: none !important; }
+    [data-menubtn] { display: flex !important; }
+  }
+  @media (max-width: 640px) {
+    [data-float] { display: none !important; }
+  }
+  @keyframes sdRise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+  @keyframes sdLine { from { opacity: 0; transform: translateY(26px); filter: blur(6px); } to { opacity: 1; transform: none; filter: blur(0); } }
+  @keyframes sdRule { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+</style>
+<link rel="stylesheet" href="site.css" />
+</head>
+<body>
+<div data-lang="ko" style="min-height:100vh">
+
+  <header style="position:fixed;top:0;left:0;width:100%;z-index:60;background:rgba(247,245,242,0.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,22,26,0.09)">
+    <div style="max-width:1340px;margin:0 auto;padding:0 clamp(18px,4vw,32px);height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <a href="#top" style="display:flex;align-items:center;gap:14px">
+        <img src="logo-sdhaus.png" alt="SD HAUS (주)에스디하우스" style="height:38px;width:auto;display:block" />
+      </a>
+      <nav data-nav="true" style="display:flex;align-items:center;gap:clamp(18px,2.4vw,34px);font-size:13.5px;letter-spacing:0.02em;color:#3A3E44;white-space:nowrap">
+        <a href="company.html"><span class="i18n-ko">회사소개</span><span class="i18n-en">About</span></a>
+        <a href="products.html"><span class="i18n-ko">제품</span><span class="i18n-en">Products</span></a>
+        <a href="projects.html"><span class="i18n-ko">납품실적</span><span class="i18n-en">Projects</span></a>
+        <a href="gallery.html"><span class="i18n-ko">시공사진</span><span class="i18n-en">Photos</span></a>
+        <a href="quality.html"><span class="i18n-ko">인증·시공</span><span class="i18n-en">Quality</span></a>
+        <a href="contact.html"><span class="i18n-ko">문의</span><span class="i18n-en">Contact</span></a>
+      </nav>
+      <div style="display:flex;align-items:center;gap:16px">
+        <button onclick="toggleLang()" style="display:flex;align-items:center;gap:7px;background:none;border:1px solid rgba(20,22,26,0.18);border-radius:999px;padding:7px 14px;font-size:11px;letter-spacing:0.12em;color:#3A3E44;cursor:pointer" class="sdx1">
+          <span class="i18n-ko" style="font-weight:600">KR</span><span class="i18n-ko" style="opacity:0.4">EN</span>
+          <span class="i18n-en" style="opacity:0.4">KR</span><span class="i18n-en" style="font-weight:600">EN</span>
+        </button>
+        <a href="tel:0318526655" data-phone="true" style="font-size:12.5px;letter-spacing:0.04em;border-bottom:1px solid rgba(20,22,26,0.25);padding-bottom:2px">031-852-6655</a>
+        <button onclick="toggleMenu()" data-menubtn="true" aria-label="menu" style="display:none;align-items:center;justify-content:center;width:38px;height:38px;background:none;border:1px solid rgba(20,22,26,0.18);cursor:pointer;flex-direction:column;gap:5px">
+          <span style="display:block;width:16px;height:1px;background:#14161A"></span>
+          <span style="display:block;width:16px;height:1px;background:#14161A"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" style="display:none">
+      <div style="border-top:1px solid rgba(20,22,26,0.1);background:#F7F5F2;padding:18px clamp(18px,4vw,32px) 26px;display:grid;gap:2px">
+        <a href="company.html" onclick="closeMenu()" style="padding:12px 0;font-size:15px;border-bottom:1px solid rgba(20,22,26,0.07)"><span class="i18n-ko">회사소개</span><span class="i18n-en">About</span></a>
+        <a href="products.html" onclick="closeMenu()" style="padding:12px 0;font-size:15px;border-bottom:1px solid rgba(20,22,26,0.07)"><span class="i18n-ko">제품</span><span class="i18n-en">Products</span></a>
+        <a href="projects.html" onclick="closeMenu()" style="padding:12px 0;font-size:15px;border-bottom:1px solid rgba(20,22,26,0.07)"><span class="i18n-ko">납품실적</span><span class="i18n-en">Projects</span></a>
+        <a href="gallery.html" style="padding:12px 0;font-size:15px;border-bottom:1px solid rgba(20,22,26,0.07)"><span class="i18n-ko">시공사진</span><span class="i18n-en">Photos</span></a>
+        <a href="quality.html" onclick="closeMenu()" style="padding:12px 0;font-size:15px;border-bottom:1px solid rgba(20,22,26,0.07)"><span class="i18n-ko">인증·시공</span><span class="i18n-en">Quality</span></a>
+        <a href="contact.html" onclick="closeMenu()" style="padding:12px 0;font-size:15px;border-bottom:1px solid rgba(20,22,26,0.07)"><span class="i18n-ko">문의</span><span class="i18n-en">Contact</span></a>
+        <a href="tel:0318526655" style="margin-top:12px;padding:14px;text-align:center;background:#14161A;color:#F7F5F2;font-size:12.5px;letter-spacing:0.12em">031-852-6655</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="top" style="position:relative;height:min(92vh,900px);min-height:560px;overflow:hidden;display:flex;align-items:flex-end">
+    <div style="position:absolute;inset:0;overflow:hidden;background:#2A2E34 url(img-hero-lobby.jpg) center/cover no-repeat">
+      <img src="img-hero-lobby.jpg" alt="이모션월 마감 로비" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:sdCycle3 15s cubic-bezier(0.4,0,0.6,1) infinite 0s, sdKenLoop 15s linear infinite 0s" />
+      <img src="img-ew-pattern-1.jpg" alt="이모션월이 적용된 주거 공간" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:sdCycle3 15s cubic-bezier(0.4,0,0.6,1) infinite 5s, sdKenLoop 15s linear infinite 5s" />
+      <img src="img-prod-emotionwall.jpg" alt="칼라가토 마블 벽면이 적용된 거실" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:sdCycle3 15s cubic-bezier(0.4,0,0.6,1) infinite 10s, sdKenLoop 15s linear infinite 10s" />
+      <div style="position:absolute;inset:0;z-index:4;background:linear-gradient(100deg,rgba(12,14,17,0.5) 0%,rgba(12,14,17,0.24) 52%,rgba(12,14,17,0.04) 100%)"></div>
+      <div style="position:absolute;inset:0;z-index:4;background:linear-gradient(to top,rgba(12,14,17,0.42) 0%,rgba(12,14,17,0) 42%)"></div>
+    </div>
+    <div style="position:relative;z-index:5;max-width:1340px;margin:0 auto;padding:0 clamp(18px,4vw,32px) clamp(56px,8vw,96px);width:100%">
+      <div style="width:56px;height:1px;background:rgba(255,255,255,0.6);margin-bottom:26px;transform-origin:left;animation:sdRule 1s cubic-bezier(0.16,1,0.3,1) 0.15s both"></div>
+      <div style="font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:#C9D8E0;margin-bottom:26px;animation:sdLine 1s cubic-bezier(0.16,1,0.3,1) 0.3s both">Interior Finishing Materials</div>
+      <h1 style="margin:0 0 26px;font-family:'Noto Serif KR',serif;font-weight:300;color:#fff;font-size:clamp(28px,4.6vw,64px);line-height:1.3;letter-spacing:-0.01em;text-wrap:pretty;max-width:16em;text-shadow:0 2px 30px rgba(12,14,17,0.35)">
+        <span class="i18n-ko" style="display:block"><span style="display:block;animation:sdLine 1.2s cubic-bezier(0.16,1,0.3,1) 0.45s both">표면의 완성도가</span><span style="display:block;animation:sdLine 1.2s cubic-bezier(0.16,1,0.3,1) 0.62s both">공간의 품격을 결정합니다</span></span>
+        <span class="i18n-en" style="display:block"><span style="display:block;animation:sdLine 1.2s cubic-bezier(0.16,1,0.3,1) 0.45s both">The finish decides</span><span style="display:block;animation:sdLine 1.2s cubic-bezier(0.16,1,0.3,1) 0.62s both">the dignity of a space</span></span>
+      </h1>
+      <p style="margin:0 0 clamp(30px,4vw,44px);max-width:44em;color:rgba(255,255,255,0.9);font-size:clamp(13.5px,1.2vw,15.5px);line-height:1.95;font-weight:300;text-wrap:pretty;text-shadow:0 1px 20px rgba(12,14,17,0.4);animation:sdLine 1.2s cubic-bezier(0.16,1,0.3,1) 0.85s both">
+        <span class="i18n-ko">불연 벽장재 이모션월, 라인보드, LDW+ 스타일 바닥재까지 — (주)에스디하우스는 인테리어 마감재를 설계 단계부터 납품까지 일관되게 공급하는 종합 마감재 파트너입니다.</span>
+        <span class="i18n-en">From non-combustible Emotion Wall panels to line boards and LDW+ Stile flooring, SD HAUS supplies interior finishing materials end to end — from specification to delivery.</span>
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;animation:sdLine 1.1s cubic-bezier(0.16,1,0.3,1) 1.05s both">
+        <a href="projects.html" style="display:inline-flex;align-items:center;gap:12px;background:#F7F5F2;color:#14161A;padding:17px 30px;font-size:12.5px;letter-spacing:0.14em;text-transform:uppercase" class="sdx2">
+          <span class="i18n-ko">납품 실적 보기</span><span class="i18n-en">View projects</span>
+          <span style="opacity:0.5">→</span>
+        </a>
+        <a href="products.html" style="display:inline-flex;align-items:center;gap:12px;border:1px solid rgba(255,255,255,0.5);color:#fff;padding:17px 30px;font-size:12.5px;letter-spacing:0.14em;text-transform:uppercase" class="sdx3">
+          <span class="i18n-ko">제품 라인업</span><span class="i18n-en">Products</span>
+        </a>
+      </div>
+    </div>
+    <div data-float="true" style="position:absolute;right:32px;bottom:96px;z-index:5;text-align:right;color:rgba(255,255,255,0.72);font-size:11px;letter-spacing:0.14em;line-height:2;animation:sdLine 1.2s cubic-bezier(0.16,1,0.3,1) 1.3s both">
+      <div>EMOTION WALL · TEMBOUR BOARD · LDW+ STILE</div>
+      <div style="opacity:0.7">Wall, ceiling and floor finishes</div>
+    </div>
+  </section>
+
+  <section style="border-bottom:1px solid rgba(20,22,26,0.09);background:#fff">
+    <div style="max-width:1340px;margin:0 auto;padding:0 clamp(18px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))">
+      <div style="padding:38px 0;border-right:1px solid rgba(20,22,26,0.08)">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:400;line-height:1">2021</div>
+        <div style="font-size:12px;color:#8A8378;letter-spacing:0.06em;margin-top:8px"><span class="i18n-ko">설립</span><span class="i18n-en">Founded</span></div>
+      </div>
+      <div style="padding:38px 0 38px 34px;border-right:1px solid rgba(20,22,26,0.08)">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:400;line-height:1">6<span style="font-size:22px">종</span></div>
+        <div style="font-size:12px;color:#8A8378;letter-spacing:0.06em;margin-top:8px"><span class="i18n-ko">공급 마감재 라인</span><span class="i18n-en">Material lines</span></div>
+      </div>
+      <div style="padding:38px 0 38px 34px;border-right:1px solid rgba(20,22,26,0.08)">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:400;line-height:1">Class A</div>
+        <div style="font-size:12px;color:#8A8378;letter-spacing:0.06em;margin-top:8px"><span class="i18n-ko">불연 등급 (EN 13501-1)</span><span class="i18n-en">Fire rating (EN 13501-1)</span></div>
+      </div>
+      <div style="padding:38px 0 38px 34px">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:400;line-height:1">Direct</div>
+        <div style="font-size:12px;color:#8A8378;letter-spacing:0.06em;margin-top:8px"><span class="i18n-ko">제조사 직공급 구조</span><span class="i18n-en">Direct supply</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="background:#fff;border-bottom:1px solid rgba(20,22,26,0.08)">
+    <div style="max-width:1340px;margin:0 auto;padding:clamp(72px,10vw,130px) clamp(18px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:clamp(40px,5vw,80px);align-items:start">
+      <div>
+        <div style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:#A79E92;margin-bottom:22px">About</div>
+        <h2 style="margin:0 0 28px;font-family:'Noto Serif KR',serif;font-weight:300;font-size:clamp(26px,2.6vw,38px);line-height:1.45;letter-spacing:-0.01em">
+          <span class="i18n-ko">제품을 파는 회사가 아니라<br />프로젝트를 완성하는 파트너</span>
+          <span class="i18n-en">Not a vendor.<br />A finishing partner.</span>
+        </h2>
+        <p style="margin:0;color:#5F5A52;font-size:14.5px;line-height:2.05;font-weight:300;text-wrap:pretty">
+          <span class="i18n-ko">SD HAUS는 인테리어 마감재를 안정적으로 공급하는 전문 기업입니다. 고객 맞춤형 제품 솔루션을 제안하고, 설계·구매·납품까지 하나의 흐름으로 관리합니다.</span>
+          <span class="i18n-en">SD HAUS supplies interior finishing materials with a single accountable line from specification and purchasing through to delivery on site.</span>
+        </p>
+      </div>
+      <div class="hairgrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px">
+        <div style="background:#F7F5F2;padding:40px 34px">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.2em;color:#A79E92;margin-bottom:16px">01</div>
+          <h3 style="margin:0 0 12px;font-size:16.5px;font-weight:600;letter-spacing:-0.01em"><span class="i18n-ko">검증된 자재</span><span class="i18n-en">Verified materials</span></h3>
+          <p style="margin:0;font-size:13.5px;line-height:1.95;color:#6B655D;font-weight:300"><span class="i18n-ko">불연·방수·항균 성능을 국내외 시험성적서로 확인한 자재만 취급합니다. 현장 사양과 법규 기준을 함께 검토합니다.</span><span class="i18n-en">Only materials backed by domestic and EU test reports for fire, water and mould performance.</span></p>
+        </div>
+        <div style="background:#F7F5F2;padding:40px 34px">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.2em;color:#A79E92;margin-bottom:16px">02</div>
+          <h3 style="margin:0 0 12px;font-size:16.5px;font-weight:600;letter-spacing:-0.01em"><span class="i18n-ko">제조사 직공급</span><span class="i18n-en">Direct supply</span></h3>
+          <p style="margin:0;font-size:13.5px;line-height:1.95;color:#6B655D;font-weight:300"><span class="i18n-ko">유통 단계를 줄인 직공급 구조로 단가·납기·재고 리스크를 함께 낮춥니다. 지정 필름 사용 생산과 패턴 개발도 대응합니다.</span><span class="i18n-en">A direct structure that lowers cost, lead time and stock risk — including custom pattern development.</span></p>
+        </div>
+        <div style="background:#F7F5F2;padding:40px 34px">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.2em;color:#A79E92;margin-bottom:16px">03</div>
+          <h3 style="margin:0 0 12px;font-size:16.5px;font-weight:600;letter-spacing:-0.01em"><span class="i18n-ko">현장 대응</span><span class="i18n-en">On-site support</span></h3>
+          <p style="margin:0;font-size:13.5px;line-height:1.95;color:#6B655D;font-weight:300"><span class="i18n-ko">공동주택·오피스·F&amp;B·공공시설까지 현장 조건에 맞춘 시공 기준과 자재 배치 가이드를 제공합니다.</span><span class="i18n-en">Installation standards tailored to housing, office, F&amp;B and public projects.</span></p>
+        </div>
+        <div style="background:#F7F5F2;padding:40px 34px">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.2em;color:#A79E92;margin-bottom:16px">04</div>
+          <h3 style="margin:0 0 12px;font-size:16.5px;font-weight:600;letter-spacing:-0.01em"><span class="i18n-ko">장기 파트너십</span><span class="i18n-en">Long-term partnership</span></h3>
+          <p style="margin:0;font-size:13.5px;line-height:1.95;color:#6B655D;font-weight:300"><span class="i18n-ko">브랜드별 연간 물량 계약과 반복 납품 구조를 운영합니다. 대형 건설사·프랜차이즈 다점포 납품 경험을 보유합니다.</span><span class="i18n-en">Annual volume agreements and repeat delivery for builders and multi-store franchises.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" style="max-width:1340px;margin:0 auto;padding:clamp(56px,7vw,96px) clamp(18px,4vw,32px) 0">
+    <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px 40px;padding-bottom:34px;border-bottom:1px solid rgba(20,22,26,0.14)">
+      <div>
+        <div style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:#A79E92;margin-bottom:22px">Products</div>
+        <h2 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:300;font-size:clamp(26px,2.6vw,38px);line-height:1.4">
+          <span class="i18n-ko">벽에서 바닥까지, 여섯 개의 마감 라인</span>
+          <span class="i18n-en">Six finishing lines, wall to floor</span>
+        </h2>
+      </div>
+      <a href="products.html" style="font-size:12.5px;letter-spacing:0.1em;color:#6B655D;border-bottom:1px solid rgba(20,22,26,0.25);padding-bottom:3px;white-space:nowrap"><span class="i18n-ko">제품 상세 보기</span><span class="i18n-en">Product detail</span> →</a>
+    </div>
+
+    <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:clamp(40px,5vw,64px);align-items:center;padding:clamp(48px,7vw,76px) 0;border-bottom:1px solid rgba(20,22,26,0.09)">
+      <div style="position:relative">
+        <img src="img-prod-emotionwall.jpg" alt="이모션월 칼라카타 마블 적용 거실" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
+        <img src="img-prod-emotionwall-2.jpg" alt="이모션월 침실 적용" style="position:absolute;right:-14px;bottom:-28px;width:34%;aspect-ratio:3/4;object-fit:cover;border:8px solid #F7F5F2" />
+      </div>
+      <div>
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:18px">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.22em;color:#A79E92">01</span>
+          <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#4E7B93">Wall panel</span>
+        </div>
+        <h3 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:30px;letter-spacing:-0.01em">
+          <span class="i18n-ko">이모션월</span><span class="i18n-en">Emotion Wall</span>
+        </h3>
+        <a href="product-emotionwall.html" style="display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:0.1em;color:#4E7B93;margin-bottom:10px"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</a>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:17px;letter-spacing:0.1em;color:#8A8378;margin-bottom:26px">Quartz Core Wall Panel</div>
+        <p style="margin:0 0 30px;font-size:14.5px;line-height:2;color:#5F5A52;font-weight:300;text-wrap:pretty">
+          <span class="i18n-ko">천연 미네랄을 주원료로 한 불연 벽장재입니다. 필름을 덧붙이는 방식이 아니라 미네랄 보드 표면에 디지털 프린팅으로 석재·대리석 질감을 직접 구현하며, 원하는 어떤 디자인도 생산할 수 있습니다. 혀·홈(T&amp;G) 결합으로 시공이 빠릅니다.</span>
+          <span class="i18n-en">A non-combustible mineral wall panel. Stone and marble textures are digitally printed onto the mineral board itself — not laminated film — and any custom design can be produced. Tongue-and-groove interlocking keeps installation fast.</span>
+        </p>
+        <dl style="margin:0;display:grid;grid-template-columns:auto 1fr;gap:14px 26px;font-size:13.5px;line-height:1.7">
+          <dt style="color:#A79E92;letter-spacing:0.06em"><span class="i18n-ko">성능</span><span class="i18n-en">Performance</span></dt>
+          <dd style="margin:0;color:#3A3E44"><span class="i18n-ko">불연 Class A (EN 13501-1) · 국내 불연 시험성적서 보유</span><span class="i18n-en">Class A (EN 13501-1) + KR test report</span></dd>
+          <dt style="color:#A79E92;letter-spacing:0.06em"><span class="i18n-ko">방수</span><span class="i18n-en">Water</span></dt>
+          <dd style="margin:0;color:#3A3E44"><span class="i18n-ko">24시간 침수 두께 팽창률 0.04% (NALFA LF 01-2011)</span><span class="i18n-en">0.04% swelling, 24h (NALFA LF 01-2011)</span></dd>
+          <dt style="color:#A79E92;letter-spacing:0.06em"><span class="i18n-ko">단열</span><span class="i18n-en">Thermal</span></dt>
+          <dd style="margin:0;color:#3A3E44">0.115 W/m·K</dd>
+          <dt style="color:#A79E92;letter-spacing:0.06em"><span class="i18n-ko">규격</span><span class="i18n-en">Sizes</span></dt>
+          <dd style="margin:0;color:#3A3E44">1,100 × 2,800 × 8T <span style="color:#A79E92">/</span> 1,120 × 2,440 (3,000) × 8T</dd>
+          <dt style="color:#A79E92;letter-spacing:0.06em"><span class="i18n-ko">표면</span><span class="i18n-en">Texture</span></dt>
+          <dd style="margin:0;color:#3A3E44"><span class="i18n-ko">유광 · 무광 · 반광 · 타일(그라우팅)</span><span class="i18n-en">High gloss · Matte · Skin touch · Grouting</span></dd>
+        </dl>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:28px">
+          <span style="font-size:11.5px;letter-spacing:0.06em;color:#6B655D;border:1px solid rgba(20,22,26,0.14);padding:6px 12px">EW 8500 Calacatta</span>
+          <span style="font-size:11.5px;letter-spacing:0.06em;color:#6B655D;border:1px solid rgba(20,22,26,0.14);padding:6px 12px">EW 1005 Marron Emperador</span>
+          <span style="font-size:11.5px;letter-spacing:0.06em;color:#6B655D;border:1px solid rgba(20,22,26,0.14);padding:6px 12px">EW 1006 Sand White</span>
+          <span style="font-size:11.5px;letter-spacing:0.06em;color:#6B655D;border:1px solid rgba(20,22,26,0.14);padding:6px 12px">EW 8030 Pietra Gray</span>
+          <span style="font-size:11.5px;letter-spacing:0.06em;color:#6B655D;border:1px solid rgba(20,22,26,0.14);padding:6px 12px">EASY TILE</span>
+        </div>
+      </div>
+    </article>
+
+    <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:clamp(40px,5vw,64px);align-items:center;padding:clamp(48px,7vw,76px) 0;border-bottom:1px solid rgba(20,22,26,0.09)">
+      <div>
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:18px">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.22em;color:#A79E92">02</span>
+          <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#4E7B93">Ceiling &amp; wall</span>
+        </div>
+        <h3 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:30px"><span class="i18n-ko">SD 라인보드</span><span class="i18n-en">SD Line Board</span></h3>
+        <a href="product-lineboard.html" style="display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:0.1em;color:#4E7B93;margin-bottom:10px"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</a>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:17px;letter-spacing:0.1em;color:#8A8378;margin-bottom:26px">Linear Profile Board</div>
+        <p style="margin:0 0 30px;font-size:14.5px;line-height:2;color:#5F5A52;font-weight:300;text-wrap:pretty">
+          <span class="i18n-ko">천장과 벽에 정돈된 선형 리듬과 입체감을 만드는 보드입니다. 자작·화이트 등 컬러 조합으로 복도·로비의 방향성을 만들고, 조명과 결합해 공간의 깊이를 조절합니다. 공동주택 공용부와 오피스 로비에 가장 많이 적용됩니다.</span>
+          <span class="i18n-en">Linear boards that give ceilings and corridors a calm, directional rhythm — most often used in apartment common areas and office lobbies, paired with cove lighting.</span>
+        </p>
+        <dl style="margin:0;display:grid;grid-template-columns:auto 1fr;gap:14px 26px;font-size:13.5px;line-height:1.7">
+          <dt style="color:#A79E92"><span class="i18n-ko">규격</span><span class="i18n-en">Sizes</span></dt>
+          <dd style="margin:0;color:#3A3E44">224 × 2,400 <span style="color:#A79E92">/</span> 583 × 2,400 <span style="color:#A79E92">/</span> 9T</dd>
+          <dt style="color:#A79E92"><span class="i18n-ko">주요 품번</span><span class="i18n-en">Codes</span></dt>
+          <dd style="margin:0;color:#3A3E44">LSD-05F22E · LSD-06F22E · LSD-503EOL84A · LSD5003WM</dd>
+          <dt style="color:#A79E92"><span class="i18n-ko">적용</span><span class="i18n-en">Applications</span></dt>
+          <dd style="margin:0;color:#3A3E44"><span class="i18n-ko">천장 · 벽 · 복도 공용부</span><span class="i18n-en">Ceiling · wall · corridor</span></dd>
+        </dl>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <img src="img-prod-lineboard.jpg" alt="라인보드 천장 시공" style="width:100%;aspect-ratio:3/4;object-fit:cover" />
+        <img src="img-proj-doosan.png" alt="두산 순천트리마제 라인보드" style="width:100%;aspect-ratio:3/4;object-fit:cover;margin-top:40px" />
+      </div>
+    </article>
+
+    <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:clamp(40px,5vw,64px);align-items:center;padding:clamp(48px,7vw,76px) 0;border-bottom:1px solid rgba(20,22,26,0.09)">
+      <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:16px">
+        <img src="img-prod-stile.jpg" alt="LDW+ 스타일 바닥재 적용 쇼룸" style="width:100%;aspect-ratio:4/5;object-fit:cover" />
+        <img src="img-prod-stile-tex.jpg" alt="스타일 석재 질감" style="width:100%;aspect-ratio:3/4;object-fit:cover;align-self:end" />
+      </div>
+      <div>
+        <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:18px">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.22em;color:#A79E92">03</span>
+          <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#4E7B93">Flooring</span>
+        </div>
+        <h3 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:30px"><span class="i18n-ko">LDW+ 스타일</span><span class="i18n-en">LDW+ Stile</span></h3>
+        <a href="product-stile.html" style="display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:0.1em;color:#4E7B93;margin-bottom:10px"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</a>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:17px;letter-spacing:0.1em;color:#8A8378;margin-bottom:26px">Hybrid Tile Flooring</div>
+        <p style="margin:0 0 30px;font-size:14.5px;line-height:2;color:#5F5A52;font-weight:300;text-wrap:pretty">
+          <span class="i18n-ko">세라믹 타일의 장점은 그대로, 깨짐·크랙·들뜸·차가운 표면 같은 단점은 걷어낸 하이브리드 마감재입니다. 강화된 바닥충격음 기준(경량·중량 각 49dB) 대응이 필요한 공동주택에서 타일 대비 경량충격음을 4~7dB 낮춥니다.</span>
+          <span class="i18n-en">A hybrid floor that keeps the look of ceramic tile without the cracking, lifting or cold surface — and cuts light-impact sound 4–7 dB versus tile under Korea's tightened 49 dB standard.</span>
+        </p>
+        <dl style="margin:0;display:grid;grid-template-columns:auto 1fr;gap:14px 26px;font-size:13.5px;line-height:1.7">
+          <dt style="color:#A79E92"><span class="i18n-ko">두께</span><span class="i18n-en">Thickness</span></dt>
+          <dd style="margin:0;color:#3A3E44">4.5T <span style="color:#A79E92">/</span> 7.5T</dd>
+          <dt style="color:#A79E92"><span class="i18n-ko">차음</span><span class="i18n-en">Impact sound</span></dt>
+          <dd style="margin:0;color:#3A3E44"><span class="i18n-ko">타일 대비 경량충격음 4~7dB 감소</span><span class="i18n-en">4–7 dB lower than tile</span></dd>
+          <dt style="color:#A79E92"><span class="i18n-ko">내마모</span><span class="i18n-en">Abrasion</span></dt>
+          <dd style="margin:0;color:#3A3E44">ASTM C1027</dd>
+          <dt style="color:#A79E92"><span class="i18n-ko">원료</span><span class="i18n-en">Material</span></dt>
+          <dd style="margin:0;color:#3A3E44"><span class="i18n-ko">식물성·재활용 원료 90% 이상</span><span class="i18n-en">90%+ plant-based &amp; recycled</span></dd>
+        </dl>
+        <div style="margin-top:26px;padding:18px 20px;background:#fff;border-left:2px solid #83C4D8;font-size:13px;line-height:1.85;color:#5F5A52">
+          <span class="i18n-ko">중국산 저가 타일과의 실행가·성능 비교표는 담당자 문의 시 제공합니다.</span>
+          <span class="i18n-en">Cost and performance comparison against imported tile available on request.</span>
+        </div>
+      </div>
+    </article>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:clamp(28px,3.5vw,32px);padding:clamp(48px,7vw,76px) 0 0">
+      <div>
+        <img src="img-hero-lounge.jpg" alt="뉴인 템버보드 곡면 벽면" style="width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:24px" />
+        <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:0.22em;color:#A79E92">04</span>
+          <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:21px"><span class="i18n-ko">뉴인 템버보드</span><span class="i18n-en">New;in Tembour Board</span></h3>
+        <a href="product-tembour.html" style="display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:0.1em;color:#4E7B93;margin-bottom:10px"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</a>
+        </div>
+        <p style="margin:0 0 14px;font-size:13.5px;line-height:1.95;color:#6B655D;font-weight:300"><span class="i18n-ko">MDF 기반 무늬목·도장·필름 마감 보드로, 사각형과 원형 프로파일을 조합해 곡면 벽체와 기둥까지 감쌉니다.</span><span class="i18n-en">MDF-based profiled board in rectangle and circle sections, wrapping curved walls and columns.</span></p>
+        <div style="font-size:12px;color:#8A8378;letter-spacing:0.04em">Rectangle 20 · 12.5 · 9 · 7 · 5mm <span style="opacity:0.5">/</span> Circle 25 · 12mm</div>
+      </div>
+      <div>
+        <img src="img-prod-lvt.jpg" alt="도든 LVT 바닥재 적용" style="width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:24px" />
+        <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:0.22em;color:#A79E92">05</span>
+          <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:21px"><span class="i18n-ko">도든 LVT · SPC</span><span class="i18n-en">Doden LVT · SPC</span></h3>
+        <a href="product-lvt.html" style="display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:0.1em;color:#4E7B93;margin-bottom:10px"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</a>
+        </div>
+        <p style="margin:0 0 14px;font-size:13.5px;line-height:1.95;color:#6B655D;font-weight:300"><span class="i18n-ko">주거와 상업 공간 모두를 커버하는 LVT·SPC 바닥재. 프랜차이즈 다점포 표준 사양으로 반복 납품 중입니다.</span><span class="i18n-en">LVT and SPC flooring for both residential and commercial use, supplied as a standard spec to multi-store franchises.</span></p>
+        <div style="font-size:12px;color:#8A8378;letter-spacing:0.04em">SD 914RF · SD 915RF · SD 901 · SD 902 · SD 904</div>
+      </div>
+      <div>
+        <img src="img-prod-emotionwall-art.jpg" alt="이모션월 커스텀 아트 패턴 벽면" style="width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:24px" />
+        <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:0.22em;color:#A79E92">06</span>
+          <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:21px"><span class="i18n-ko">마그네슘보드 · STOWALL</span><span class="i18n-en">Magnesium Board · STOWALL</span></h3>
+        <a href="product-board.html" style="display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:0.1em;color:#4E7B93;margin-bottom:10px"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</a>
+        </div>
+        <p style="margin:0 0 14px;font-size:13.5px;line-height:1.95;color:#6B655D;font-weight:300"><span class="i18n-ko">KFI 불연 인증 마그네슘보드와 STOWALL 벽장재. 지정 필름 사용 생산과 커스텀 아트 패턴까지 대응합니다.</span><span class="i18n-en">KFI-certified non-combustible magnesium board and STOWALL panels, including custom art patterns.</span></p>
+        <div style="font-size:12px;color:#8A8378;letter-spacing:0.04em"><span class="i18n-ko">불연 인증 · 지정 필름 생산 · 커스텀 패턴</span><span class="i18n-en">Non-combustible · custom film · custom pattern</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" style="margin-top:clamp(72px,10vw,130px);background:#14161A;color:#EDEAE5;padding:clamp(72px,10vw,130px) 0">
+    <div style="max-width:1340px;margin:0 auto;padding:0 clamp(18px,4vw,32px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,0.14)">
+        <div>
+          <div style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:#83C4D8;margin-bottom:22px">Projects</div>
+          <h2 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:300;font-size:clamp(26px,2.6vw,38px);line-height:1.4;color:#fff">
+            <span class="i18n-ko">공항 푸드코트부터 하이엔드 주거까지</span>
+            <span class="i18n-en">From airport food courts to high-end housing</span>
+          </h2>
+        </div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.9;text-align:right;white-space:nowrap">
+          <a href="gallery.html" style="color:#83C4D8;border-bottom:1px solid rgba(131,196,216,0.4);padding-bottom:3px"><span class="i18n-ko">시공 사진 전체 보기</span><span class="i18n-en">All site photos</span> →</a>
+        </div>
+      </div>
+
+      <div class="hairgrid-dark" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:1px;margin-top:1px">
+        <div style="background:#14161A;padding:0">
+          <img src="img-proj-incheon.jpg" alt="인천공항 T1 플레이팅하나 푸드코트" style="width:100%;aspect-ratio:16/10;object-fit:cover" />
+          <div style="padding:clamp(28px,4vw,38px) clamp(24px,4vw,40px) clamp(32px,4vw,44px)">
+            <div style="display:flex;gap:14px;align-items:center;margin-bottom:16px">
+              <span style="font-size:10.5px;letter-spacing:0.16em;text-transform:uppercase;color:#83C4D8;border:1px solid rgba(131,196,216,0.4);padding:4px 10px">Public / F&amp;B</span>
+              <span style="font-size:12px;color:rgba(255,255,255,0.45);letter-spacing:0.06em">2025.12</span>
+            </div>
+            <h3 style="margin:0 0 14px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:26px;color:#fff"><span class="i18n-ko">플레이팅하나 · 인천공항 T1</span><span class="i18n-en">Plating Hana · Incheon Airport T1</span></h3>
+            <p style="margin:0 0 26px;font-size:14px;line-height:1.95;color:rgba(255,255,255,0.62);font-weight:300;max-width:38em"><span class="i18n-ko">인테리어 필름과 기능성 보드, 바닥재를 통합 적용해 공항 푸드코트의 완성도를 끌어올린 프로젝트입니다. 마그네슘보드는 지정 필름 사용 생산으로 대응했고, 이모션월 빅슬랩으로 대리석 면을 구현했습니다.</span><span class="i18n-en">Film, functional board and flooring supplied as one package for an airport food court — magnesium board produced with the specified film, and marble faces realised in Emotion Wall big slab.</span></p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px 24px;font-size:13px;color:rgba(255,255,255,0.75)">
+              <div><span style="color:rgba(255,255,255,0.4)"><span class="i18n-ko">납품 품목</span><span class="i18n-en">Scope</span></span><br /><span class="i18n-ko">인테리어 필름 외 3종</span><span class="i18n-en">Film + 3 material lines</span></div>
+              <div><span style="color:rgba(255,255,255,0.4)"><span class="i18n-ko">주요 자재</span><span class="i18n-en">Materials</span></span><br /><span class="i18n-ko">바닥재 패턴개발 · 마그네슘보드 · 이모션월 빅슬랩</span><span class="i18n-en">Custom-pattern flooring · magnesium board · big slab</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="hairgrid-dark" style="display:grid;grid-template-rows:1fr 1fr;gap:1px">
+          <div style="background:#14161A;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0">
+            <img src="img-proj-doosan.png" alt="두산 순천트리마제 천장 라인보드" style="width:100%;height:100%;object-fit:cover" />
+            <div style="padding:34px 32px">
+              <div style="font-size:12px;color:rgba(255,255,255,0.45);letter-spacing:0.06em;margin-bottom:12px">2024.11 – 2025.03</div>
+              <h3 style="margin:0 0 12px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px;color:#fff"><span class="i18n-ko">두산 · 순천트리마제</span><span class="i18n-en">Doosan · Suncheon Trimage</span></h3>
+              <p style="margin:0 0 16px;font-size:13px;line-height:1.9;color:rgba(255,255,255,0.6);font-weight:300"><span class="i18n-ko">자작 톤과 화이트 라인보드로 천장에 정돈된 선형 디자인과 입체감을 구현했습니다.</span><span class="i18n-en">Birch and white line boards giving the ceiling a linear, layered order.</span></p>
+              <div style="font-size:11.5px;color:rgba(255,255,255,0.45);letter-spacing:0.04em;line-height:1.8">LSD-05F22E <span class="i18n-ko">자작</span><span class="i18n-en">Birch</span><br />LSD-06F22E <span class="i18n-ko">화이트</span><span class="i18n-en">White</span></div>
+            </div>
+          </div>
+          <div style="background:#14161A;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0">
+            <img src="img-proj-jeil.png" alt="제일풍경채 신분평 복도 천장" style="width:100%;height:100%;object-fit:cover" />
+            <div style="padding:34px 32px">
+              <div style="font-size:12px;color:rgba(255,255,255,0.45);letter-spacing:0.06em;margin-bottom:12px"><span class="i18n-ko">공사 중 촬영</span><span class="i18n-en">During construction</span></div>
+              <h3 style="margin:0 0 12px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px;color:#fff"><span class="i18n-ko">제일풍경채 · 신분평</span><span class="i18n-en">Jeil Punggyeongchae</span></h3>
+              <p style="margin:0 0 16px;font-size:13px;line-height:1.9;color:rgba(255,255,255,0.6);font-weight:300"><span class="i18n-ko">화이트 라인보드로 복도 천장에 깔끔한 선형 디자인과 밝은 공간감을 구현했습니다.</span><span class="i18n-en">White line boards bringing brightness and rhythm to corridor ceilings.</span></p>
+              <div style="font-size:11.5px;color:rgba(255,255,255,0.45);letter-spacing:0.04em">LSD-503EOL84A</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hairgrid-dark" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;margin-top:1px">
+        <div style="background:#14161A">
+          <img src="img-proj-angelinus.jpg" alt="엔젤리너스 매장 바닥재 적용" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
+          <div style="padding:30px 32px 36px">
+            <div style="font-size:10.5px;letter-spacing:0.16em;text-transform:uppercase;color:#83C4D8;margin-bottom:12px">Retail F&amp;B</div>
+            <h3 style="margin:0 0 10px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:19px;color:#fff">LOTTE GRS · ANGELINUS</h3>
+            <p style="margin:0;font-size:13px;line-height:1.9;color:rgba(255,255,255,0.58);font-weight:300"><span class="i18n-ko">전국 매장 리뉴얼에 LDW+ 스타일 바닥재 LDS-45204-01 적용.</span><span class="i18n-en">LDW+ Stile LDS-45204-01 rolled out across store renewals.</span></p>
+          </div>
+        </div>
+        <div style="background:#14161A">
+          <img src="img-proj-br.jpg" alt="배스킨라빈스 매장 시공" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
+          <div style="padding:30px 32px 36px">
+            <div style="font-size:10.5px;letter-spacing:0.16em;text-transform:uppercase;color:#83C4D8;margin-bottom:12px">Franchise</div>
+            <h3 style="margin:0 0 10px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:19px;color:#fff"><span class="i18n-ko">SPC · 프랜차이즈 다점포</span><span class="i18n-en">SPC · Multi-store</span></h3>
+            <p style="margin:0;font-size:13px;line-height:1.9;color:rgba(255,255,255,0.58);font-weight:300"><span class="i18n-ko">SPC 그룹 매장 바닥재 SD 914RF · SD 901 시리즈 반복 납품.</span><span class="i18n-en">Repeat supply of SD 914RF and SD 901 flooring to SPC group stores.</span></p>
+          </div>
+        </div>
+        <div style="background:#14161A">
+          <img src="img-proj-office.jpg" alt="오피스 로비 바닥재 적용" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
+          <div style="padding:30px 32px 36px">
+            <div style="font-size:10.5px;letter-spacing:0.16em;text-transform:uppercase;color:#83C4D8;margin-bottom:12px">Office</div>
+            <h3 style="margin:0 0 10px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:19px;color:#fff"><span class="i18n-ko">오스템임플란트 사옥</span><span class="i18n-en">Osstem Implant HQ</span></h3>
+            <p style="margin:0;font-size:13px;line-height:1.9;color:rgba(255,255,255,0.58);font-weight:300"><span class="i18n-ko">LDW+ 스타일 LDS-45304-01 바닥재와 MDF 도장 벽면 마감.</span><span class="i18n-en">LDW+ Stile LDS-45304-01 flooring with painted MDF wall finishes.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quality" style="background:#fff;border-top:1px solid rgba(20,22,26,0.08);border-bottom:1px solid rgba(20,22,26,0.08)">
+    <div style="max-width:1340px;margin:0 auto;padding:clamp(72px,10vw,130px) clamp(18px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:clamp(40px,5vw,80px);align-items:start">
+      <div>
+        <div style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:#A79E92;margin-bottom:22px">Quality &amp; Installation</div>
+        <h2 style="margin:0 0 28px;font-family:'Noto Serif KR',serif;font-weight:300;font-size:clamp(26px,2.6vw,38px);line-height:1.45">
+          <span class="i18n-ko">시험성적서로<br />설명하는 성능</span>
+          <span class="i18n-en">Performance,<br />on paper</span>
+        </h2>
+        <p style="margin:0 0 30px;color:#5F5A52;font-size:14.5px;line-height:2.05;font-weight:300;text-wrap:pretty">
+          <span class="i18n-ko">불연·방수·항균·치수안정성·단열 항목은 국내 시험기관과 유럽 규격(EN 13501-1) 성적서로 제공됩니다. 사양서 검토 단계에서 필요한 서류를 함께 정리해 드립니다.</span>
+          <span class="i18n-en">Fire, water, mould, dimensional stability and thermal performance are all backed by test reports — domestic and EN 13501-1 — and compiled for your spec review.</span>
+        </p>
+        <a href="quality.html" style="display:inline-flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:0.1em;border-bottom:1px solid rgba(20,22,26,0.3);padding-bottom:4px"><span class="i18n-ko">인증·시공 상세 보기</span><span class="i18n-en">Quality detail</span> <span style="opacity:0.5">→</span></a>
+      </div>
+      <div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:20px;margin-bottom:44px">
+          <div style="background:#F7F5F2;padding:14px">
+            <img src="img-cert-1.jpg" alt="SGS 인증서" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top" />
+            <div style="font-size:11.5px;color:#8A8378;letter-spacing:0.04em;margin-top:12px">SGS <span class="i18n-ko">인증서</span><span class="i18n-en">certificate</span></div>
+          </div>
+          <div style="background:#F7F5F2;padding:14px">
+            <img src="img-cert-2.jpg" alt="불연 시험성적서" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top" />
+            <div style="font-size:11.5px;color:#8A8378;letter-spacing:0.04em;margin-top:12px"><span class="i18n-ko">불연 시험성적서</span><span class="i18n-en">Fire test report</span></div>
+          </div>
+          <div style="background:#F7F5F2;padding:14px">
+            <img src="img-cert-3.jpg" alt="바닥충격음 관련 자료" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top" />
+            <div style="font-size:11.5px;color:#8A8378;letter-spacing:0.04em;margin-top:12px"><span class="i18n-ko">바닥충격음 자료</span><span class="i18n-en">Impact sound data</span></div>
+          </div>
+        </div>
+        <div style="border-top:1px solid rgba(20,22,26,0.14);padding-top:36px">
+          <h3 style="margin:0 0 20px;font-size:16.5px;font-weight:600"><span class="i18n-ko">시공 안내</span><span class="i18n-en">Installation guidance</span></h3>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px 40px">
+            <div>
+              <div style="font-size:13px;font-weight:600;margin-bottom:8px"><span class="i18n-ko">벽장재 (이모션월)</span><span class="i18n-en">Wall panel</span></div>
+              <p style="margin:0;font-size:13px;line-height:1.95;color:#6B655D;font-weight:300"><span class="i18n-ko">벽면 평활도 2m당 3mm 이하, 전용 접착제 도포 후 하부에서 상부로 부착, T&amp;G 결합부 타카 고정. 시공 후 24시간 충격·진동 금지.</span><span class="i18n-en">Wall flatness ≤3mm per 2m, adhesive applied and panels set bottom-up, T&amp;G joints stapled. No impact for 24 hours.</span></p>
+            </div>
+            <div>
+              <div style="font-size:13px;font-weight:600;margin-bottom:8px"><span class="i18n-ko">바닥재 · 줄눈 마감</span><span class="i18n-en">Flooring &amp; grout</span></div>
+              <p style="margin:0;font-size:13px;line-height:1.95;color:#6B655D;font-weight:300"><span class="i18n-ko">실측·구배 확인 후 가조립, 에폭시 교반 3분 이상·40분 내 사용, 마스킹 후 줄눈 삽입. 완료 후 24시간 물 사용 금지 안내.</span><span class="i18n-en">Dry-fit after survey, epoxy mixed 3 min and used within 40 min, grout inserted over masking. No water use for 24 hours.</span></p>
+            </div>
+          </div>
+          <div style="margin-top:26px;font-size:12.5px;color:#8A8378;line-height:1.8"><span class="i18n-ko">상세 시공 매뉴얼과 자재 배치 기준은 파트너·시공사에 별도 제공됩니다.</span><span class="i18n-en">Full installation manuals are issued to partners and contractors on request.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalog" style="max-width:1340px;margin:clamp(64px,8vw,110px) auto 0;padding:0 clamp(18px,4vw,32px)">
+    <div style="background:#fff;padding:clamp(36px,5vw,64px) clamp(24px,4.5vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(36px,5vw,64px);align-items:center">
+      <div>
+        <div style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:#A79E92;margin-bottom:20px">Documents</div>
+        <h2 style="margin:0 0 16px;font-family:'Noto Serif KR',serif;font-weight:300;font-size:30px;line-height:1.45"><span class="i18n-ko">필요한 자료는<br />보내드립니다</span><span class="i18n-en">We send the<br />documents you need</span></h2>
+        <p style="margin:0 0 26px;font-size:13.5px;line-height:1.95;color:#6B655D;font-weight:300"><span class="i18n-ko">제품소개서·카탈로그·시험성적서는 요청하신 분께 담당자가 직접 메일로 보내드립니다. 항목을 누르면 요청 메일이 열립니다.</span><span class="i18n-en">Product decks, catalogues and test reports are sent by e-mail on request. Tap an item to open a pre-filled message.</span></p>
+        <a href="contact.html#docs" style="display:inline-flex;align-items:center;gap:12px;background:#14161A;color:#F7F5F2;padding:16px 28px;font-size:12.5px;letter-spacing:0.14em;text-transform:uppercase" class="sdx2"><span class="i18n-ko">자료 요청하기</span><span class="i18n-en">Request documents</span><span style="opacity:0.5">→</span></a>
+      </div>
+      <div class="hairgrid" style="display:grid;gap:1px">
+      <a href="catalog.html" style="grid-column:1/-1;background:#F7F5F2;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 28px" class="sdx4">
+        <span><span style="font-size:14.5px;font-weight:600"><span class="i18n-ko">종합 카다로그</span><span class="i18n-en">Full catalogue</span></span><span style="display:block;font-size:12.5px;color:#8A8378;margin-top:5px"><span class="i18n-ko">벽자재·방음재·실외자재·건식온돌 22개 품목 · ver.260707</span><span class="i18n-en">All product lines · ver.260707</span></span></span>
+        <span style="font-size:11px;letter-spacing:0.14em;color:#4E7B93;white-space:nowrap"><span class="i18n-ko">카다로그 보기</span><span class="i18n-en">View</span> →</span>
+      </a>
+      <a href="mailto:sdhaus0609@naver.com?subject=EMOTION WALL 제품소개서 요청" style="background:#fff;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 28px" class="sdx4">
+        <span><span style="font-size:14.5px;font-weight:600">EMOTION WALL</span><span style="display:block;font-size:12.5px;color:#8A8378;margin-top:5px"><span class="i18n-ko">제품소개서</span><span class="i18n-en">Product deck</span></span></span>
+        <span style="font-size:11px;letter-spacing:0.14em;color:#4E7B93;white-space:nowrap"><span class="i18n-ko">메일 요청</span><span class="i18n-en">Request</span> →</span>
+      </a>
+      <a href="mailto:sdhaus0609@naver.com?subject=LDW+ STILE 자료 요청" style="background:#fff;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 28px" class="sdx4">
+        <span><span style="font-size:14.5px;font-weight:600">LDW+ STILE</span><span style="display:block;font-size:12.5px;color:#8A8378;margin-top:5px"><span class="i18n-ko">스타일 소개자료</span><span class="i18n-en">Style guide</span></span></span>
+        <span style="font-size:11px;letter-spacing:0.14em;color:#4E7B93;white-space:nowrap"><span class="i18n-ko">메일 요청</span><span class="i18n-en">Request</span> →</span>
+      </a>
+      <a href="mailto:sdhaus0609@naver.com?subject=DODEN LVT 카달로그 요청" style="background:#fff;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 28px" class="sdx4">
+        <span><span style="font-size:14.5px;font-weight:600">DODEN LVT</span><span style="display:block;font-size:12.5px;color:#8A8378;margin-top:5px"><span class="i18n-ko">카달로그 2026</span><span class="i18n-en">Catalogue 2026</span></span></span>
+        <span style="font-size:11px;letter-spacing:0.14em;color:#4E7B93;white-space:nowrap"><span class="i18n-ko">메일 요청</span><span class="i18n-en">Request</span> →</span>
+      </a>
+      <a href="mailto:sdhaus0609@naver.com?subject=에스디하우스 회사소개서 요청" style="background:#fff;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 28px" class="sdx4">
+        <span><span style="font-size:14.5px;font-weight:600"><span class="i18n-ko">회사소개서</span><span class="i18n-en">Company profile</span></span><span style="display:block;font-size:12.5px;color:#8A8378;margin-top:5px"><span class="i18n-ko">에스디하우스 소개 · 2026</span><span class="i18n-en">SD HAUS overview · 2026</span></span></span>
+        <span style="font-size:11px;letter-spacing:0.14em;color:#4E7B93;white-space:nowrap"><span class="i18n-ko">메일 요청</span><span class="i18n-en">Request</span> →</span>
+      </a>
+      <a href="mailto:sdhaus0609@naver.com?subject=납품실적 자료 요청" style="background:#fff;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 28px" class="sdx4">
+        <span><span style="font-size:14.5px;font-weight:600"><span class="i18n-ko">납품실적 자료</span><span class="i18n-en">Project references</span></span><span style="display:block;font-size:12.5px;color:#8A8378;margin-top:5px"><span class="i18n-ko">두산 순천트리마제 · 제일풍경채 등</span><span class="i18n-en">Doosan Trimage, Jeil and others</span></span></span>
+        <span style="font-size:11px;letter-spacing:0.14em;color:#4E7B93;white-space:nowrap"><span class="i18n-ko">메일 요청</span><span class="i18n-en">Request</span> →</span>
+      </a>
+      <a href="mailto:sdhaus0609@naver.com?subject=시험성적서 요청" style="background:#fff;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 28px" class="sdx4">
+        <span><span style="font-size:14.5px;font-weight:600"><span class="i18n-ko">시험성적서 · 사양서</span><span class="i18n-en">Test reports · specs</span></span><span style="display:block;font-size:12.5px;color:#8A8378;margin-top:5px"><span class="i18n-ko">준불연 · 방염 · KS 시험 원본</span><span class="i18n-en">Fire and KS test originals</span></span></span>
+        <span style="font-size:11px;letter-spacing:0.14em;color:#4E7B93;white-space:nowrap"><span class="i18n-ko">메일 요청</span><span class="i18n-en">Request</span> →</span>
+      </a>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1340px;margin:clamp(72px,10vw,130px) auto 0;padding:0 clamp(18px,4vw,32px) clamp(72px,10vw,130px)">
+    <div class="hairgrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1px">
+      <div style="background:#14161A;color:#EDEAE5;padding:clamp(36px,5vw,56px) clamp(26px,3.5vw,44px)">
+        <div style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:#83C4D8;margin-bottom:20px">Contact</div>
+        <h2 style="margin:0 0 16px;font-family:'Noto Serif KR',serif;font-weight:300;font-size:clamp(23px,2.4vw,30px);line-height:1.45;color:#fff">
+          <span class="i18n-ko">현장 조건을 알려주시면<br />사양과 단가를 정리해 보내드립니다</span>
+          <span class="i18n-en">Tell us the site conditions —<br />we'll come back with spec and price</span>
+        </h2>
+        <p style="margin:0 0 30px;font-size:14px;line-height:1.95;color:rgba(255,255,255,0.62);font-weight:300;max-width:34em">
+          <span class="i18n-ko">면적과 적용 부위, 희망 납기만 있어도 검토가 가능합니다. 영업일 기준 1일 내 회신드립니다.</span>
+          <span class="i18n-en">Area, application and target date are enough to start. We reply within one business day.</span>
+        </p>
+        <a href="contact.html" style="display:inline-flex;align-items:center;gap:12px;background:#F7F5F2;color:#14161A;padding:17px 30px;font-size:12.5px;letter-spacing:0.14em;text-transform:uppercase" class="sdx2">
+          <span class="i18n-ko">문의 페이지로</span><span class="i18n-en">Go to contact</span>
+          <span style="opacity:0.5">→</span>
+        </a>
+      </div>
+      <div style="background:#fff;padding:clamp(36px,5vw,56px) clamp(26px,3.5vw,44px)">
+        <dl style="margin:0 0 30px;display:grid;grid-template-columns:auto 1fr;gap:16px 28px;font-size:14px;line-height:1.7">
+          <dt style="color:#A79E92;letter-spacing:0.08em"><span class="i18n-ko">담당</span><span class="i18n-en">Contact</span></dt>
+          <dd style="margin:0"><span class="i18n-ko">전광호 이사</span><span class="i18n-en">Kwangho Jeon, Director</span></dd>
+          <dt style="color:#A79E92;letter-spacing:0.08em">T</dt>
+          <dd style="margin:0"><a href="tel:0318526655" style="border-bottom:1px solid rgba(20,22,26,0.2)">031-852-6655</a></dd>
+          <dt style="color:#A79E92;letter-spacing:0.08em">E</dt>
+          <dd style="margin:0"><a href="mailto:sdhaus0609@naver.com" style="border-bottom:1px solid rgba(20,22,26,0.2)">sdhaus0609@naver.com</a></dd>
+          <dt style="color:#A79E92;letter-spacing:0.08em">A</dt>
+          <dd style="margin:0"><span class="i18n-ko">경기도 양주시 선하로 191</span><span class="i18n-en">191 Seonha-ro, Yangju-si, Gyeonggi-do</span></dd>
+          <dt style="color:#A79E92;letter-spacing:0.08em"><span class="i18n-ko">상담</span><span class="i18n-en">Hours</span></dt>
+          <dd style="margin:0"><span class="i18n-ko">평일 09:00 – 18:00</span><span class="i18n-en">Weekdays 09:00 – 18:00</span></dd>
+        </dl>
+        <div style="border:1px solid rgba(20,22,26,0.14)">
+          <iframe title="에스디하우스 위치" src="https://www.openstreetmap.org/export/embed.html?bbox=127.0450%2C37.8090%2C127.0810%2C37.8290&amp;layer=mapnik&amp;marker=37.8190%2C127.0630" style="width:100%;height:220px;border:0;display:block" loading="lazy"></iframe>
+          <div style="padding:16px 20px;font-size:12.5px;color:#6B655D;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 16px">
+            <span><span class="i18n-ko">본사 · 경기도 양주시 선하로 191</span><span class="i18n-en">HQ · Yangju, Gyeonggi-do</span></span>
+            <a href="https://map.naver.com/p/search/양주시 선하로 191" target="_blank" rel="noopener" style="color:#4E7B93"><span class="i18n-ko">길찾기</span><span class="i18n-en">Directions</span> →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#14161A;color:rgba(237,234,229,0.7);padding:72px 0 44px">
+    <div style="max-width:1340px;margin:0 auto;padding:0 clamp(18px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:clamp(32px,4vw,56px);padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,0.12)">
+      <div>
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:22px">
+          <img src="logo-sdhaus-light.png" alt="SD HAUS" style="height:34px;width:auto;display:block" />
+        </div>
+        <p style="margin:0;font-size:13px;line-height:1.95;font-weight:300;max-width:26em"><span class="i18n-ko">(주)에스디하우스 — 인테리어 마감재 종합 공급. 설계부터 납품까지 하나의 창구로 대응합니다.</span><span class="i18n-en">SD HAUS — interior finishing materials, specified and delivered through one point of contact.</span></p>
+      </div>
+      <div style="font-size:13px;line-height:2.1">
+        <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:16px">Site</div>
+        <div><a href="company.html" style="color:rgba(237,234,229,0.7)"><span class="i18n-ko">회사소개</span><span class="i18n-en">About</span></a></div>
+        <div><a href="products.html" style="color:rgba(237,234,229,0.7)"><span class="i18n-ko">제품</span><span class="i18n-en">Products</span></a></div>
+        <div><a href="projects.html" style="color:rgba(237,234,229,0.7)"><span class="i18n-ko">납품실적</span><span class="i18n-en">Projects</span></a></div>
+        <div><a href="quality.html" style="color:rgba(237,234,229,0.7)"><span class="i18n-ko">인증·시공</span><span class="i18n-en">Quality</span></a></div>
+      </div>
+      <div style="font-size:13px;line-height:2.1">
+        <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:16px">Contact</div>
+        <div>031-852-6655</div>
+        <div>sdhaus0609@naver.com</div>
+        <div><span class="i18n-ko">경기도 양주시 선하로 191</span><span class="i18n-en">Yangju, Gyeonggi-do</span></div>
+      </div>
+    </div>
+    <div style="max-width:1340px;margin:0 auto;padding:26px clamp(18px,4vw,32px) 0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 20px;font-size:11.5px;color:rgba(255,255,255,0.38);letter-spacing:0.04em">
+      <span>© 2026 SD HAUS Co., Ltd. All rights reserved.</span>
+      <span class="i18n-ko">제품 사양은 개선을 위해 예고 없이 변경될 수 있습니다.</span><span class="i18n-en">Specifications subject to change without notice.</span>
+    </div>
+  </footer>
+
+
+  <div style="position:fixed;right:clamp(14px,3vw,28px);bottom:clamp(14px,3vw,28px);z-index:70;display:flex;flex-direction:column;align-items:flex-end;gap:12px">
+    <div id="chatPanel" style="display:none;width:336px;max-width:calc(100vw - 40px);background:#fff;box-shadow:0 30px 70px rgba(20,22,26,0.24)">
+      <div style="background:#14161A;color:#fff;padding:20px 22px;display:flex;justify-content:space-between;align-items:flex-start;gap:16px">
+        <div>
+          <div style="font-size:14px;font-weight:600"><span class="i18n-ko">에스디하우스 상담</span><span class="i18n-en">SD HAUS enquiry</span></div>
+          <div style="font-size:11.5px;color:rgba(255,255,255,0.5);margin-top:5px"><span class="i18n-ko">평일 09:00 – 18:00</span><span class="i18n-en">Weekdays 09:00 – 18:00</span></div>
+        </div>
+        <button onclick="toggleChat()" aria-label="close" style="background:none;border:0;color:rgba(255,255,255,0.6);font-size:20px;line-height:1;cursor:pointer;padding:0">×</button>
+      </div>
+      <div class="hairgrid" style="padding:22px;display:grid;gap:1px">
+        <a href="tel:0318526655" style="display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 18px;background:#F7F5F2;font-size:13.5px"><span><span class="i18n-ko">전화 상담 031-852-6655</span><span class="i18n-en">Call 031-852-6655</span></span><span style="color:#4E7B93;font-size:11px">→</span></a>
+        
+        <a href="contact.html#docs" style="display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 18px;background:#F7F5F2;font-size:13.5px"><span><span class="i18n-ko">자료 요청하기</span><span class="i18n-en">Request documents</span></span><span style="color:#4E7B93;font-size:11px">→</span></a>
+        <a href="contact.html" style="display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 18px;background:#F7F5F2;font-size:13.5px"><span><span class="i18n-ko">샘플 · 견적 문의 남기기</span><span class="i18n-en">Leave an enquiry</span></span><span style="color:#4E7B93;font-size:11px">→</span></a>
+      </div>
+    </div>
+    <button onclick="toggleChat()" style="display:flex;align-items:center;gap:10px;background:#14161A;color:#F7F5F2;border:0;border-radius:999px;padding:15px 22px;font-size:12.5px;letter-spacing:0.08em;box-shadow:0 18px 40px rgba(20,22,26,0.28);cursor:pointer">
+      <span style="width:7px;height:7px;border-radius:50%;background:#83C4D8;display:inline-block"></span>
+      <span class="i18n-ko">샘플 · 견적 상담</span><span class="i18n-en">Sample &amp; quote</span>
+    </button>
+  </div>
+
+</div>
+<script src="site.js"></script>
+<button id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="맨 위로" style="position:fixed;right:clamp(14px,3vw,28px);bottom:calc(clamp(14px,3vw,28px) + 62px);z-index:65;width:48px;height:48px;border:1px solid rgba(20,22,26,0.18);background:rgba(247,245,242,0.92);backdrop-filter:blur(8px);color:#14161A;font-size:17px;line-height:1;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s">↑</button>
+<script>(function(){var b=document.getElementById('toTop');function u(){var on=window.scrollY>600;b.style.opacity=on?'1':'0';b.style.pointerEvents=on?'auto':'none';}window.addEventListener('scroll',u,{passive:true});u();})();</script>
+</body>
+</html>
