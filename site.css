@@ -33,3 +33,8 @@ body, p, li, dt, dd, h1, h2, h3, div, span, a, figcaption {
   overflow-wrap: break-word;
 }
 p, li, dd, h1, h2, h3 { text-wrap: pretty; }
+
+/* 종합 카다로그 제품 그리드 — 4열 고정 */
+.catgrid { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+@media (max-width: 1080px) { .catgrid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; } }
+@media (max-width: 560px) { .catgrid { grid-template-columns: 1fr !important; } }
