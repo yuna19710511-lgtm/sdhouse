@@ -34,7 +34,7 @@ body, p, li, dt, dd, h1, h2, h3, div, span, a, figcaption {
 }
 p, li, dd, h1, h2, h3 { text-wrap: pretty; }
 
-/* 종합 카다로그 제품 그리드 — 품목 수에 맞춰 열 수 */
+/* 종합 카탈로그 제품 그리드 — 품목 수에 맞춰 열 수 */
 .catgrid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .catgrid.c3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .catgrid.c5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
