@@ -39,6 +39,16 @@
   @keyframes sdRise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
   @keyframes sdLine { from { opacity: 0; transform: translateY(26px); filter: blur(6px); } to { opacity: 1; transform: none; filter: blur(0); } }
   @keyframes sdRule { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  .pgrid7 { grid-template-columns: repeat(12, minmax(0,1fr)) !important; }
+  .pgrid7 > a { grid-column: span 3; }
+  .pgrid7 > a:nth-child(n+5) { grid-column: span 4; }
+  @media (max-width: 1000px) {
+    .pgrid7 { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+    .pgrid7 > a, .pgrid7 > a:nth-child(n+5) { grid-column: auto !important; }
+  }
+  @media (max-width: 560px) {
+    .pgrid7 { grid-template-columns: minmax(0,1fr) !important; }
+  }
 </style>
 <link rel="stylesheet" href="site.css" />
 </head>
