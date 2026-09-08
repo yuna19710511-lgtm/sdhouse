@@ -57,3 +57,15 @@ p, li, dd, h1, h2, h3 { text-wrap: pretty; }
 .feat2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 @media (max-width: 900px) { .feat3 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; } }
 @media (max-width: 560px) { .feat3, .feat2 { grid-template-columns: 1fr !important; } }
+
+/* 메인 제품 7개 — 4 + 3 배치 */
+.pgrid7 { grid-template-columns: repeat(12, minmax(0,1fr)) !important; }
+.pgrid7 > a { grid-column: span 3; }
+.pgrid7 > a:nth-child(n+5) { grid-column: span 4; }
+@media (max-width: 1000px) {
+  .pgrid7 { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+  .pgrid7 > a, .pgrid7 > a:nth-child(n+5) { grid-column: auto; }
+}
+@media (max-width: 560px) {
+  .pgrid7 { grid-template-columns: minmax(0,1fr) !important; }
+}
