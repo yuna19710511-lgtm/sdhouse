@@ -40,11 +40,11 @@
   @keyframes sdLine { from { opacity: 0; transform: translateY(26px); filter: blur(6px); } to { opacity: 1; transform: none; filter: blur(0); } }
   @keyframes sdRule { from { transform: scaleX(0); } to { transform: scaleX(1); } }
   .pgrid7 { grid-template-columns: repeat(12, minmax(0,1fr)) !important; }
-  .pgrid7 > a { grid-column: span 3; }
-  .pgrid7 > a:nth-child(n+5) { grid-column: span 4; }
+  .pgrid7 > a { grid-column: span 4; }
+  .pgrid7 > a:nth-child(n+4) { grid-column: span 3; }
   @media (max-width: 1000px) {
     .pgrid7 { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
-    .pgrid7 > a, .pgrid7 > a:nth-child(n+5) { grid-column: auto !important; }
+    .pgrid7 > a, .pgrid7 > a:nth-child(n+4) { grid-column: auto !important; }
   }
   @media (max-width: 560px) {
     .pgrid7 { grid-template-columns: minmax(0,1fr) !important; }
@@ -266,10 +266,18 @@
       </div>
     <div style="max-width:1340px;margin:0 auto;padding:0 clamp(18px,4vw,32px)">
       <div class="pgrid7" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(20px,2.4vw,32px)">
+        <a href="product-film.html" style="display:block" class="sdx4">
+          <img src="img-prod-film.jpg" alt="인테리어 필름" style="width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:22px" loading="lazy" />
+          <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:10px">
+            <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.2em;color:#A79E92">01</span>
+            <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(21px,2vw,26px)"><span class="i18n-ko">인테리어 필름</span><span class="i18n-en">Interior Film</span></h3>
+          </div>
+          <div style="font-size:14px;color:#6B655D;font-weight:300"><span class="i18n-ko">실물 스와치 37종</span><span class="i18n-en">37 scanned swatches</span></div>
+        </a>
         <a href="product-emotionwall.html" style="display:block" class="sdx4">
           <img src="img-prod-emotionwall.jpg" alt="이모션월" style="width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:22px" loading="lazy" />
           <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:10px">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.2em;color:#A79E92">01</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.2em;color:#A79E92">02</span>
             <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(21px,2vw,26px)"><span class="i18n-ko">이모션월</span><span class="i18n-en">Emotion Wall</span></h3>
           </div>
           <div style="font-size:14px;color:#6B655D;font-weight:300"><span class="i18n-ko">불연 벽장재</span><span class="i18n-en">Non-combustible wall panel</span></div>
@@ -277,7 +285,7 @@
         <a href="product-lineboard.html" style="display:block" class="sdx4">
           <img src="img-prod-lineboard.jpg" alt="SD 라인보드" style="width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:22px" loading="lazy" />
           <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:10px">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.2em;color:#A79E92">02</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.2em;color:#A79E92">03</span>
             <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(21px,2vw,26px)"><span class="i18n-ko">SD 라인보드</span><span class="i18n-en">SD Line Board</span></h3>
           </div>
           <div style="font-size:14px;color:#6B655D;font-weight:300"><span class="i18n-ko">천장·벽 선형 보드</span><span class="i18n-en">Linear ceiling board</span></div>
@@ -285,7 +293,7 @@
         <a href="product-stile.html" style="display:block" class="sdx4">
           <img src="img-prod-stile.jpg" alt="LDW+ 스타일" style="width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:22px" loading="lazy" />
           <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:10px">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.2em;color:#A79E92">03</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.2em;color:#A79E92">04</span>
             <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(21px,2vw,26px)"><span class="i18n-ko">LDW+ 스타일</span><span class="i18n-en">LDW+ Stile</span></h3>
           </div>
           <div style="font-size:14px;color:#6B655D;font-weight:300"><span class="i18n-ko">타일 대체 바닥재</span><span class="i18n-en">Tile-replacement floor</span></div>
@@ -293,7 +301,7 @@
         <a href="product-tembour.html" style="display:block" class="sdx4">
           <img src="img-hero-lounge.jpg" alt="뉴인 템버보드" style="width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:22px" loading="lazy" />
           <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:10px">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.2em;color:#A79E92">04</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.2em;color:#A79E92">05</span>
             <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(21px,2vw,26px)"><span class="i18n-ko">뉴인 템버보드</span><span class="i18n-en">Tembour Board</span></h3>
           </div>
           <div style="font-size:14px;color:#6B655D;font-weight:300"><span class="i18n-ko">곡면 대응 프로파일</span><span class="i18n-en">Profiled board</span></div>
@@ -301,7 +309,7 @@
         <a href="product-lvt.html" style="display:block" class="sdx4">
           <img src="img-prod-doden.jpg" alt="도든 LVT" style="width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:22px" loading="lazy" />
           <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:10px">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.2em;color:#A79E92">05</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.2em;color:#A79E92">06</span>
             <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(21px,2vw,26px)"><span class="i18n-ko">도든 LVT</span><span class="i18n-en">Doden LVT</span></h3>
           </div>
           <div style="font-size:14px;color:#6B655D;font-weight:300"><span class="i18n-ko">주거·상업 바닥재</span><span class="i18n-en">LVT flooring</span></div>
@@ -309,19 +317,12 @@
         <a href="product-board.html" style="display:block" class="sdx4">
           <img src="img-proj-incheon-3.jpg" alt="마그네슘보드" style="width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:22px" loading="lazy" />
           <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:10px">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.2em;color:#A79E92">06</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.2em;color:#A79E92">07</span>
             <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(21px,2vw,26px)"><span class="i18n-ko">마그네슘보드</span><span class="i18n-en">Magnesium Board</span></h3>
           </div>
           <div style="font-size:14px;color:#6B655D;font-weight:300"><span class="i18n-ko">KFI 불연 인증</span><span class="i18n-en">KFI non-combustible</span></div>
         </a>
-        <a href="product-film.html" style="display:block" class="sdx4">
-          <img src="img-prod-film.jpg" alt="인테리어 필름" style="width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:22px" loading="lazy" />
-          <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:10px">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.2em;color:#A79E92">07</span>
-            <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(21px,2vw,26px)"><span class="i18n-ko">인테리어 필름</span><span class="i18n-en">Interior Film</span></h3>
-          </div>
-          <div style="font-size:14px;color:#6B655D;font-weight:300"><span class="i18n-ko">실물 스와치 37종</span><span class="i18n-en">37 scanned swatches</span></div>
-        </a>
+        
       </div>
       <div style="margin-top:clamp(36px,4vw,52px);display:flex;flex-wrap:wrap;gap:14px">
         <a href="products.html" style="display:inline-flex;align-items:center;gap:12px;background:#14161A;color:#F7F5F2;padding:18px 32px;font-size:13px;letter-spacing:0.12em;text-transform:uppercase" class="sdx2"><span class="i18n-ko">제품 상세 보기</span><span class="i18n-en">Product detail</span><span style="opacity:0.5">→</span></a>
