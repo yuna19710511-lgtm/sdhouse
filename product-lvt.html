@@ -101,7 +101,7 @@
       </div>
       <div style="background:#fff;padding:26px 24px">
         <div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#A79E92;margin-bottom:12px">Colours</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:26px;line-height:1.2">31</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:26px;line-height:1.2">33</div>
         
       </div>
       <div style="background:#fff;padding:26px 24px">
@@ -124,7 +124,7 @@
         <dt style="color:#A79E92;padding:16px 0;border-top:1px solid rgba(20,22,26,0.09)"><span class="i18n-ko">표면 보호</span><span class="i18n-en">Wear layer</span></dt>
         <dd style="margin:0;color:#3A3E44;padding:16px 0;border-top:1px solid rgba(20,22,26,0.09)">상지 0.2mm — 자사 기존 제품 대비 최대 2배 증폭 설계</dd>
         <dt style="color:#A79E92;padding:16px 0;border-top:1px solid rgba(20,22,26,0.09)"><span class="i18n-ko">컬러</span><span class="i18n-en">Colours</span></dt>
-        <dd style="margin:0;color:#3A3E44;padding:16px 0;border-top:1px solid rgba(20,22,26,0.09)">2T 14종 · 3T 17종</dd>
+        <dd style="margin:0;color:#3A3E44;padding:16px 0;border-top:1px solid rgba(20,22,26,0.09)">2T 16종 · 3T 17종</dd>
         <dt style="color:#A79E92;padding:16px 0;border-top:1px solid rgba(20,22,26,0.09)"><span class="i18n-ko">인증</span><span class="i18n-en">Certification</span></dt>
         <dd style="margin:0;color:#3A3E44;padding:16px 0;border-top:1px solid rgba(20,22,26,0.09)">KC 인증 · ISO 9001:2015 · KTR · KS · FITI · 무프탈레이트 친환경 가소재</dd>
         <dt style="color:#A79E92;padding:16px 0;border-top:1px solid rgba(20,22,26,0.09)"><span class="i18n-ko">카탈로그</span><span class="i18n-en">Catalogue</span></dt>
@@ -135,74 +135,368 @@
   </section>
 
 
-  <section style="max-width:1340px;margin:0 auto;padding:clamp(44px,6vw,72px) clamp(18px,4vw,32px) 0">
-    <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px 24px;margin-bottom:6px">
-      <h2 style="margin:0;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:#A79E92"><span class="i18n-ko">제품 종류</span><span class="i18n-en">Product range</span></h2>
-      <span style="font-size:12.5px;color:#8A8378"><span class="i18n-ko">주거·상업 겸용 · 다점포 표준 사양</span><span class="i18n-en">Residential and commercial, store-standard specs</span></span>
+  <section id="colours" style="max-width:1340px;margin:0 auto;padding:clamp(44px,6vw,72px) clamp(18px,4vw,32px) 0">
+    <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px 24px;margin-bottom:24px">
+      <h2 style="margin:0;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:#A79E92"><span class="i18n-ko">컬러 라이브러리</span><span class="i18n-en">Colour library</span></h2>
+      <span style="font-size:12.5px;color:#8A8378"><span class="i18n-ko">카탈로그 2026 · 총 <span id="lvtCount">33</span>색</span><span class="i18n-en">2026 catalogue · <span id="lvtCountEn">33</span> colours</span></span>
     </div>
 
-    <div style="display:flex;align-items:baseline;gap:14px;margin:34px 0 14px">
-      <span style="font-family:'Cormorant Garamond',serif;font-size:22px;letter-spacing:0.06em;color:#14161A">2T</span>
-      <span style="font-size:12.5px;color:#8A8378">470 × 470mm · 15ea/박스 · 14색</span>
+    <div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#A79E92;margin-bottom:10px"><span class="i18n-ko">두께</span><span class="i18n-en">Thickness</span></div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px">
+      <button class="gtab gtab-on" onclick="lvtFilter('th','all',this)"><span class="i18n-ko">전체</span><span class="i18n-en">All</span></button>
+      <button class="gtab" onclick="lvtFilter('th','2t',this)"><span class="i18n-ko">2T · 470 × 470</span><span class="i18n-en">2T · 470 × 470</span> <span style="color:#A79E92">16</span></button>
+      <button class="gtab" onclick="lvtFilter('th','3t',this)"><span class="i18n-ko">3T · 600 × 600</span><span class="i18n-en">3T · 600 × 600</span> <span style="color:#A79E92">17</span></button>
     </div>
-    <div class="hairgrid g4" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px">
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDF 121</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">테라조 오트밀 크림</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Terrazzo Oatmeal Cream</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDF 122</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">테라조 브레드 버터</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Terrazzo Bread Butter</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDF 123</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">테라조 오레오 그레이</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Terrazzo Oreo Gray</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDF 124</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">테라조 블랙빈 그레이</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Terrazzo Blackbean Gray</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">INK 131</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">더잉크 더 허브</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">The Ink The Herb</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">INK 132</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">더잉크 더 로맨틱</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">The Ink The Romantic</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">INK 133</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">더잉크 더 포레스트</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">The Ink The Forest</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">INK 134</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">더잉크 더 스페이스</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">The Ink The Space</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDB 141</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">베이직 어반 바닐라</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Basic Urban Vanilla</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDB 142</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">베이직 어반 스톤</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Basic Urban Stone</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDB 143</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">베이직 어반 블렌딩</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Basic Urban Blending</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDB 151</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">베이직 헤리티지 크림</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Basic Heritage Cream</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDB 152</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">베이직 헤리티지 샌드</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Basic Heritage Sand</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDB 153</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">베이직 헤리티지 그레이</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Basic Heritage Gray</div></div>
-    </div>
-    <div style="display:flex;align-items:baseline;gap:14px;margin:34px 0 14px">
-      <span style="font-family:'Cormorant Garamond',serif;font-size:22px;letter-spacing:0.06em;color:#14161A">3T</span>
-      <span style="font-size:12.5px;color:#8A8378">600 × 600mm · 9ea/박스 · 17색</span>
-    </div>
-    <div class="hairgrid g4" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px">
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1631</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">테라조 오트밀 크림</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Terrazzo Oatmeal Cream</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1632</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">테라조 브레드 버터</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Terrazzo Bread Butter</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1633</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">내추럴 라떼</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Natural Latte</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1634</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">뉴트럴 오트</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Neutral Oat</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1639</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">퓨어 바닐라</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Pure Vanilla</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1635</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">베이직 헤리티지 크림</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Basic Heritage Cream</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1636</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">코지 그레이</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Cozy Gray</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1637</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">애쉬 그레이</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Ash Gray</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1638</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">토프 베이지</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Taupe Beige</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1741</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">테라조 딥 그레이</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Terrazzo Deep Gray</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1742</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">테라조 테라 레드</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Terrazzo Tera Red</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1744</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">미스트 라이트 그레이</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Mist Light Gray</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1745</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">미스트 미드 그레이</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Mist Mid Gray</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1746</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">미스트 딥 다크</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Mist Deep Dark</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1747</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">로우 콘크리트 그레이</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Raw Concrete Gray</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1748</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">로우 콘크리트 딥 그레이</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Raw Concrete Deep Gray</div></div>
-      <div style="background:#fff;padding:20px 20px"><div style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1749</div><div style="font-size:12.5px;color:#3A3E44;margin-top:6px" class="i18n-ko">로우 콘크리트 샌드</div><div style="font-size:11.5px;color:#A79E92;margin-top:3px">Raw Concrete Sand</div></div>
-    </div>
-  </section>
 
-  <section style="max-width:1340px;margin:0 auto;padding:clamp(44px,6vw,72px) clamp(18px,4vw,32px) 0">
-    <h2 style="margin:0 0 22px;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:#A79E92"><span class="i18n-ko">컬러 · 패턴</span><span class="i18n-en">Colours</span></h2>
-    <div class="hairgrid g4" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px">
-        <figure onclick="openViewer(0)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openViewer(0)}" tabindex="0" role="button" style="margin:0;cursor:zoom-in;background:#fff">
-          <img src="img-doden-ndf121.jpg" alt="NDF 121 테라조 오트밀 크림" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover" /><figcaption style="padding:14px 18px 18px;font-size:12.5px;color:#3A3E44">NDF 121 테라조 오트밀 크림</figcaption>
+    <div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#A79E92;margin-bottom:10px"><span class="i18n-ko">시리즈</span><span class="i18n-en">Series</span></div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px">
+      <button class="gtab gtab-on" onclick="lvtFilter('ser','all',this)"><span class="i18n-ko">전체</span><span class="i18n-en">All</span></button>
+      <button class="gtab" onclick="lvtFilter('ser','terrazzo',this)"><span class="i18n-ko">테라조</span><span class="i18n-en">Terrazzo</span> <span style="color:#A79E92">6</span></button>
+      <button class="gtab" onclick="lvtFilter('ser','stone',this)"><span class="i18n-ko">스톤</span><span class="i18n-en">Stone</span> <span style="color:#A79E92">2</span></button>
+      <button class="gtab" onclick="lvtFilter('ser','ink',this)"><span class="i18n-ko">더잉크</span><span class="i18n-en">The Ink</span> <span style="color:#A79E92">4</span></button>
+      <button class="gtab" onclick="lvtFilter('ser','basic',this)"><span class="i18n-ko">베이직</span><span class="i18n-en">Basic</span> <span style="color:#A79E92">6</span></button>
+      <button class="gtab" onclick="lvtFilter('ser','plain',this)"><span class="i18n-ko">단색</span><span class="i18n-en">Plain</span> <span style="color:#A79E92">9</span></button>
+      <button class="gtab" onclick="lvtFilter('ser','mist',this)"><span class="i18n-ko">미스트</span><span class="i18n-en">Mist</span> <span style="color:#A79E92">3</span></button>
+      <button class="gtab" onclick="lvtFilter('ser','concrete',this)"><span class="i18n-ko">로우 콘크리트</span><span class="i18n-en">Raw Concrete</span> <span style="color:#A79E92">3</span></button>
+    </div>
+
+    <div id="lvtEmpty" style="display:none;padding:64px 20px;text-align:center;background:#fff;box-shadow:0 0 0 1px rgba(20,22,26,0.12);font-size:14px;color:#6E6862">
+      <span class="i18n-ko">선택하신 조건에 해당하는 컬러가 없습니다. 다른 두께나 시리즈를 선택해 주세요.</span><span class="i18n-en">No colours match this combination. Try another thickness or series.</span>
+    </div>
+
+    <div id="lvtGrid" class="hairgrid g4" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px">
+        <figure data-th="2t" data-ser="terrazzo" onclick="openLvt(0)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(0)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndf121.jpg" alt="도든 LVT NDF 121 테라조 오트밀 크림" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDF 121</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">테라조 오트밀 크림</span><span class="i18n-en">Terrazzo Oatmeal Cream</span></div>
+          </div>
         </figure>
-        <figure onclick="openViewer(1)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openViewer(1)}" tabindex="0" role="button" style="margin:0;cursor:zoom-in;background:#fff">
-          <img src="img-doden-ndf124.jpg" alt="NDF 124 테라조 블랙빈 그레이" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover" /><figcaption style="padding:14px 18px 18px;font-size:12.5px;color:#3A3E44">NDF 124 테라조 블랙빈 그레이</figcaption>
+        <figure data-th="2t" data-ser="terrazzo" onclick="openLvt(1)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(1)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndf122.jpg" alt="도든 LVT NDF 122 테라조 브레드 버터" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDF 122</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">테라조 브레드 버터</span><span class="i18n-en">Terrazzo Bread Butter</span></div>
+          </div>
         </figure>
-        <figure onclick="openViewer(2)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openViewer(2)}" tabindex="0" role="button" style="margin:0;cursor:zoom-in;background:#fff">
-          <img src="img-doden-ndt1746.jpg" alt="NDT 1746 미스트 딥 다크" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover" /><figcaption style="padding:14px 18px 18px;font-size:12.5px;color:#3A3E44">NDT 1746 미스트 딥 다크</figcaption>
+        <figure data-th="2t" data-ser="terrazzo" onclick="openLvt(2)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(2)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndf123.jpg" alt="도든 LVT NDF 123 테라조 오레오 그레이" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDF 123</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">테라조 오레오 그레이</span><span class="i18n-en">Terrazzo Oreo Gray</span></div>
+          </div>
         </figure>
-        <figure onclick="openViewer(3)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openViewer(3)}" tabindex="0" role="button" style="margin:0;cursor:zoom-in;background:#fff">
-          <img src="img-doden-ndt1747.jpg" alt="NDT 1747 로우 콘크리트 그레이" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover" /><figcaption style="padding:14px 18px 18px;font-size:12.5px;color:#3A3E44">NDT 1747 로우 콘크리트 그레이</figcaption>
+        <figure data-th="2t" data-ser="terrazzo" onclick="openLvt(3)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(3)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndf124.jpg" alt="도든 LVT NDF 124 테라조 블랙빈 그레이" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDF 124</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">테라조 블랙빈 그레이</span><span class="i18n-en">Terrazzo Blackbean Gray</span></div>
+          </div>
+        </figure>
+        <figure data-th="2t" data-ser="stone" onclick="openLvt(4)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(4)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndf125.jpg" alt="도든 LVT NDF 125 스톤 라이트 그레이" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDF 125</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">스톤 라이트 그레이</span><span class="i18n-en">Stone Light Gray</span></div>
+          </div>
+        </figure>
+        <figure data-th="2t" data-ser="stone" onclick="openLvt(5)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(5)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndf126.jpg" alt="도든 LVT NDF 126 스톤 차콜 그레이" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDF 126</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">스톤 차콜 그레이</span><span class="i18n-en">Stone Charcoal Gray</span></div>
+          </div>
+        </figure>
+        <figure data-th="2t" data-ser="ink" onclick="openLvt(6)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(6)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ink131.jpg" alt="도든 LVT INK 131 더잉크 더 허브" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">INK 131</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">더잉크 더 허브</span><span class="i18n-en">The Ink The Herb</span></div>
+          </div>
+        </figure>
+        <figure data-th="2t" data-ser="ink" onclick="openLvt(7)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(7)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ink132.jpg" alt="도든 LVT INK 132 더잉크 더 로맨틱" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">INK 132</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">더잉크 더 로맨틱</span><span class="i18n-en">The Ink The Romantic</span></div>
+          </div>
+        </figure>
+        <figure data-th="2t" data-ser="ink" onclick="openLvt(8)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(8)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ink133.jpg" alt="도든 LVT INK 133 더잉크 더 포레스트" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">INK 133</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">더잉크 더 포레스트</span><span class="i18n-en">The Ink The Forest</span></div>
+          </div>
+        </figure>
+        <figure data-th="2t" data-ser="ink" onclick="openLvt(9)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(9)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ink134.jpg" alt="도든 LVT INK 134 더잉크 더 스페이스" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">INK 134</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">더잉크 더 스페이스</span><span class="i18n-en">The Ink The Space</span></div>
+          </div>
+        </figure>
+        <figure data-th="2t" data-ser="basic" onclick="openLvt(10)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(10)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndb141.jpg" alt="도든 LVT NDB 141 베이직 어반 바닐라" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDB 141</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">베이직 어반 바닐라</span><span class="i18n-en">Basic Urban Vanilla</span></div>
+          </div>
+        </figure>
+        <figure data-th="2t" data-ser="basic" onclick="openLvt(11)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(11)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndb142.jpg" alt="도든 LVT NDB 142 베이직 어반 스톤" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDB 142</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">베이직 어반 스톤</span><span class="i18n-en">Basic Urban Stone</span></div>
+          </div>
+        </figure>
+        <figure data-th="2t" data-ser="basic" onclick="openLvt(12)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(12)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndb143.jpg" alt="도든 LVT NDB 143 베이직 어반 블렌딩" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDB 143</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">베이직 어반 블렌딩</span><span class="i18n-en">Basic Urban Blending</span></div>
+          </div>
+        </figure>
+        <figure data-th="2t" data-ser="basic" onclick="openLvt(13)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(13)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndb151.jpg" alt="도든 LVT NDB 151 베이직 헤리티지 크림" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDB 151</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">베이직 헤리티지 크림</span><span class="i18n-en">Basic Heritage Cream</span></div>
+          </div>
+        </figure>
+        <figure data-th="2t" data-ser="basic" onclick="openLvt(14)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(14)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndb152.jpg" alt="도든 LVT NDB 152 베이직 헤리티지 샌드" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDB 152</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">베이직 헤리티지 샌드</span><span class="i18n-en">Basic Heritage Sand</span></div>
+          </div>
+        </figure>
+        <figure data-th="2t" data-ser="basic" onclick="openLvt(15)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(15)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndb153.jpg" alt="도든 LVT NDB 153 베이직 헤리티지 그레이" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDB 153</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">2T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">베이직 헤리티지 그레이</span><span class="i18n-en">Basic Heritage Gray</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="plain" onclick="openLvt(16)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(16)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1631.jpg" alt="도든 LVT NDT 1631 오트밀 크림" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1631</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">오트밀 크림</span><span class="i18n-en">Oatmeal Cream</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="plain" onclick="openLvt(17)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(17)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1632.jpg" alt="도든 LVT NDT 1632 브레드 버터" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1632</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">브레드 버터</span><span class="i18n-en">Bread Butter</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="plain" onclick="openLvt(18)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(18)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1633.jpg" alt="도든 LVT NDT 1633 내추럴 라떼" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1633</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">내추럴 라떼</span><span class="i18n-en">Natural Latte</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="plain" onclick="openLvt(19)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(19)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1634.jpg" alt="도든 LVT NDT 1634 뉴트럴 오트" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1634</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">뉴트럴 오트</span><span class="i18n-en">Neutral Oat</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="plain" onclick="openLvt(20)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(20)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1635.jpg" alt="도든 LVT NDT 1635 헤리티지 크림" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1635</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">헤리티지 크림</span><span class="i18n-en">Heritage Cream</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="plain" onclick="openLvt(21)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(21)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1636.jpg" alt="도든 LVT NDT 1636 코지 그레이" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1636</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">코지 그레이</span><span class="i18n-en">Cozy Gray</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="plain" onclick="openLvt(22)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(22)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1637.jpg" alt="도든 LVT NDT 1637 애쉬 그레이" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1637</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">애쉬 그레이</span><span class="i18n-en">Ash Gray</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="plain" onclick="openLvt(23)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(23)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1638.jpg" alt="도든 LVT NDT 1638 토프 베이지" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1638</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">토프 베이지</span><span class="i18n-en">Taupe Beige</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="plain" onclick="openLvt(24)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(24)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1639.jpg" alt="도든 LVT NDT 1639 퓨어 바닐라" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1639</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">퓨어 바닐라</span><span class="i18n-en">Pure Vanilla</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="terrazzo" onclick="openLvt(25)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(25)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1741.jpg" alt="도든 LVT NDT 1741 테라조 딥 그레이" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1741</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">테라조 딥 그레이</span><span class="i18n-en">Terrazzo Deep Gray</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="terrazzo" onclick="openLvt(26)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(26)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1742.jpg" alt="도든 LVT NDT 1742 테라조 테라 레드" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1742</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">테라조 테라 레드</span><span class="i18n-en">Terrazzo Tera Red</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="mist" onclick="openLvt(27)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(27)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1744.jpg" alt="도든 LVT NDT 1744 미스트 라이트 그레이" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1744</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">미스트 라이트 그레이</span><span class="i18n-en">Mist Light Gray</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="mist" onclick="openLvt(28)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(28)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1745.jpg" alt="도든 LVT NDT 1745 미스트 미드 그레이" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1745</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">미스트 미드 그레이</span><span class="i18n-en">Mist Mid Gray</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="mist" onclick="openLvt(29)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(29)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1746.jpg" alt="도든 LVT NDT 1746 미스트 딥 다크" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1746</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">미스트 딥 다크</span><span class="i18n-en">Mist Deep Dark</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="concrete" onclick="openLvt(30)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(30)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1747.jpg" alt="도든 LVT NDT 1747 로우 콘크리트 그레이" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1747</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">로우 콘크리트 그레이</span><span class="i18n-en">Raw Concrete Gray</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="concrete" onclick="openLvt(31)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(31)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1748.jpg" alt="도든 LVT NDT 1748 로우 콘크리트 딥 그레이" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1748</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">로우 콘크리트 딥 그레이</span><span class="i18n-en">Raw Concrete Deep Gray</span></div>
+          </div>
+        </figure>
+        <figure data-th="3t" data-ser="concrete" onclick="openLvt(32)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLvt(32)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-lvt-ndt1749.jpg" alt="도든 LVT NDT 1749 로우 콘크리트 샌드" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">NDT 1749</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">3T</span>
+            </div>
+            <div style="font-size:12px;color:#6B655D;margin-top:6px"><span class="i18n-ko">로우 콘크리트 샌드</span><span class="i18n-en">Raw Concrete Sand</span></div>
+          </div>
         </figure>
     </div>
-    <p style="margin:22px 0 0;font-size:12.5px;color:#8A8378"><span class="i18n-ko">DODEN LVT 카탈로그 2026 수록 컬러 중 일부입니다. 전체 31색은 카탈로그에서 확인하실 수 있습니다.</span><span class="i18n-en">A selection from the 31 colours in the DODEN LVT 2026 catalogue.</span></p>
+    <p style="margin:22px 0 0;font-size:12.5px;color:#8A8378"><span class="i18n-ko">DODEN LVT 카탈로그 2026 전체 33색입니다. 2T 470 × 470mm 15ea/박스 · 3T 600 × 600mm 9ea/박스.</span><span class="i18n-en">All 33 colours from the DODEN LVT 2026 catalogue.</span></p>
   </section>
 
   <section style="max-width:1340px;margin:clamp(56px,8vw,88px) auto 0;padding:0 clamp(18px,4vw,32px) clamp(72px,10vw,120px)">
@@ -226,15 +520,51 @@
     <button onclick="closeViewer(event,true)" aria-label="닫기" style="position:absolute;top:20px;right:24px;background:none;border:0;color:rgba(255,255,255,0.7);font-size:30px;line-height:1;cursor:pointer">×</button>
     <button onclick="stepViewer(event,-1)" aria-label="이전" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.1);border:0;color:#fff;width:46px;height:46px;font-size:20px;cursor:pointer">‹</button>
     <button onclick="stepViewer(event,1)" aria-label="다음" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.1);border:0;color:#fff;width:46px;height:46px;font-size:20px;cursor:pointer">›</button>
-    <img id="viewerImg" alt="" style="max-width:100%;max-height:100%;object-fit:contain" />
+    <div style="display:flex;flex-direction:column;align-items:center;gap:20px;max-height:100%">
+      <img id="viewerImg" alt="" style="max-width:100%;max-height:70vh;object-fit:contain" />
+      <div class="hairgrid-dark" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;width:min(720px,100%)">
+        <div style="background:#14161A;padding:18px 20px"><div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#A79E92;margin-bottom:8px">Code</div><div id="lvtCode" style="font-size:16px;font-weight:600;color:#fff"></div></div>
+        <div style="background:#14161A;padding:18px 20px"><div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#A79E92;margin-bottom:8px">Colour</div><div id="lvtName" style="font-size:14px;color:#EDEAE5"></div></div>
+        <div style="background:#14161A;padding:18px 20px"><div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#A79E92;margin-bottom:8px">Size</div><div id="lvtTh" style="font-size:14px;color:#EDEAE5"></div></div>
+        <div style="background:#14161A;padding:18px 20px"><div style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#A79E92;margin-bottom:8px">Series</div><div id="lvtSer" style="font-size:14px;color:#EDEAE5"></div></div>
+      </div>
+    </div>
     <div id="viewerNum" style="position:absolute;bottom:22px;left:0;right:0;text-align:center;color:rgba(255,255,255,0.6);font-size:12px;letter-spacing:0.1em"></div>
   </div>
   <script>
-  var SHOTS=["img-doden-ndf121.jpg","img-doden-ndf124.jpg","img-doden-ndt1746.jpg","img-doden-ndt1747.jpg"], cur=0;
-  function openViewer(i){cur=i;var v=document.getElementById('viewer');document.getElementById('viewerImg').src=SHOTS[i];document.getElementById('viewerNum').textContent=(i+1)+' / '+SHOTS.length;v.style.display='flex';document.body.style.overflow='hidden';}
-  function closeViewer(e,force){if(force||e.target.id==='viewer'){document.getElementById('viewer').style.display='none';document.body.style.overflow='';}if(e)e.stopPropagation();}
-  function stepViewer(e,d){e.stopPropagation();cur=(cur+d+SHOTS.length)%SHOTS.length;document.getElementById('viewerImg').src=SHOTS[cur];document.getElementById('viewerNum').textContent=(cur+1)+' / '+SHOTS.length;}
-  document.addEventListener('keydown',function(e){var v=document.getElementById('viewer');if(v.style.display!=='flex')return;if(e.key==='Escape'){v.style.display='none';document.body.style.overflow='';}if(e.key==='ArrowRight')stepViewer(e,1);if(e.key==='ArrowLeft')stepViewer(e,-1);});
+  var LVTS=[{"s":"ndf121","c":"NDF 121","ko":"테라조 오트밀 크림","en":"Terrazzo Oatmeal Cream","th":"2T","ser":"테라조","serEn":"Terrazzo"},{"s":"ndf122","c":"NDF 122","ko":"테라조 브레드 버터","en":"Terrazzo Bread Butter","th":"2T","ser":"테라조","serEn":"Terrazzo"},{"s":"ndf123","c":"NDF 123","ko":"테라조 오레오 그레이","en":"Terrazzo Oreo Gray","th":"2T","ser":"테라조","serEn":"Terrazzo"},{"s":"ndf124","c":"NDF 124","ko":"테라조 블랙빈 그레이","en":"Terrazzo Blackbean Gray","th":"2T","ser":"테라조","serEn":"Terrazzo"},{"s":"ndf125","c":"NDF 125","ko":"스톤 라이트 그레이","en":"Stone Light Gray","th":"2T","ser":"스톤","serEn":"Stone"},{"s":"ndf126","c":"NDF 126","ko":"스톤 차콜 그레이","en":"Stone Charcoal Gray","th":"2T","ser":"스톤","serEn":"Stone"},{"s":"ink131","c":"INK 131","ko":"더잉크 더 허브","en":"The Ink The Herb","th":"2T","ser":"더잉크","serEn":"The Ink"},{"s":"ink132","c":"INK 132","ko":"더잉크 더 로맨틱","en":"The Ink The Romantic","th":"2T","ser":"더잉크","serEn":"The Ink"},{"s":"ink133","c":"INK 133","ko":"더잉크 더 포레스트","en":"The Ink The Forest","th":"2T","ser":"더잉크","serEn":"The Ink"},{"s":"ink134","c":"INK 134","ko":"더잉크 더 스페이스","en":"The Ink The Space","th":"2T","ser":"더잉크","serEn":"The Ink"},{"s":"ndb141","c":"NDB 141","ko":"베이직 어반 바닐라","en":"Basic Urban Vanilla","th":"2T","ser":"베이직","serEn":"Basic"},{"s":"ndb142","c":"NDB 142","ko":"베이직 어반 스톤","en":"Basic Urban Stone","th":"2T","ser":"베이직","serEn":"Basic"},{"s":"ndb143","c":"NDB 143","ko":"베이직 어반 블렌딩","en":"Basic Urban Blending","th":"2T","ser":"베이직","serEn":"Basic"},{"s":"ndb151","c":"NDB 151","ko":"베이직 헤리티지 크림","en":"Basic Heritage Cream","th":"2T","ser":"베이직","serEn":"Basic"},{"s":"ndb152","c":"NDB 152","ko":"베이직 헤리티지 샌드","en":"Basic Heritage Sand","th":"2T","ser":"베이직","serEn":"Basic"},{"s":"ndb153","c":"NDB 153","ko":"베이직 헤리티지 그레이","en":"Basic Heritage Gray","th":"2T","ser":"베이직","serEn":"Basic"},{"s":"ndt1631","c":"NDT 1631","ko":"오트밀 크림","en":"Oatmeal Cream","th":"3T","ser":"단색","serEn":"Plain"},{"s":"ndt1632","c":"NDT 1632","ko":"브레드 버터","en":"Bread Butter","th":"3T","ser":"단색","serEn":"Plain"},{"s":"ndt1633","c":"NDT 1633","ko":"내추럴 라떼","en":"Natural Latte","th":"3T","ser":"단색","serEn":"Plain"},{"s":"ndt1634","c":"NDT 1634","ko":"뉴트럴 오트","en":"Neutral Oat","th":"3T","ser":"단색","serEn":"Plain"},{"s":"ndt1635","c":"NDT 1635","ko":"헤리티지 크림","en":"Heritage Cream","th":"3T","ser":"단색","serEn":"Plain"},{"s":"ndt1636","c":"NDT 1636","ko":"코지 그레이","en":"Cozy Gray","th":"3T","ser":"단색","serEn":"Plain"},{"s":"ndt1637","c":"NDT 1637","ko":"애쉬 그레이","en":"Ash Gray","th":"3T","ser":"단색","serEn":"Plain"},{"s":"ndt1638","c":"NDT 1638","ko":"토프 베이지","en":"Taupe Beige","th":"3T","ser":"단색","serEn":"Plain"},{"s":"ndt1639","c":"NDT 1639","ko":"퓨어 바닐라","en":"Pure Vanilla","th":"3T","ser":"단색","serEn":"Plain"},{"s":"ndt1741","c":"NDT 1741","ko":"테라조 딥 그레이","en":"Terrazzo Deep Gray","th":"3T","ser":"테라조","serEn":"Terrazzo"},{"s":"ndt1742","c":"NDT 1742","ko":"테라조 테라 레드","en":"Terrazzo Tera Red","th":"3T","ser":"테라조","serEn":"Terrazzo"},{"s":"ndt1744","c":"NDT 1744","ko":"미스트 라이트 그레이","en":"Mist Light Gray","th":"3T","ser":"미스트","serEn":"Mist"},{"s":"ndt1745","c":"NDT 1745","ko":"미스트 미드 그레이","en":"Mist Mid Gray","th":"3T","ser":"미스트","serEn":"Mist"},{"s":"ndt1746","c":"NDT 1746","ko":"미스트 딥 다크","en":"Mist Deep Dark","th":"3T","ser":"미스트","serEn":"Mist"},{"s":"ndt1747","c":"NDT 1747","ko":"로우 콘크리트 그레이","en":"Raw Concrete Gray","th":"3T","ser":"로우 콘크리트","serEn":"Raw Concrete"},{"s":"ndt1748","c":"NDT 1748","ko":"로우 콘크리트 딥 그레이","en":"Raw Concrete Deep Gray","th":"3T","ser":"로우 콘크리트","serEn":"Raw Concrete"},{"s":"ndt1749","c":"NDT 1749","ko":"로우 콘크리트 샌드","en":"Raw Concrete Sand","th":"3T","ser":"로우 콘크리트","serEn":"Raw Concrete"}];
+  var lvtCur=0, lvtVis=LVTS.map(function(_,i){return i;}), lvtSel={th:"all",ser:"all"};
+  function lvtFilter(kind,val,btn){
+    lvtSel[kind]=val;
+    var row=btn.parentNode.querySelectorAll(".gtab");
+    for(var i=0;i<row.length;i++) row[i].classList.remove("gtab-on");
+    btn.classList.add("gtab-on");
+    var cards=document.querySelectorAll("#lvtGrid > figure"), n=0; lvtVis=[];
+    for(var j=0;j<cards.length;j++){
+      var ok=(lvtSel.th==="all"||cards[j].dataset.th===lvtSel.th)&&(lvtSel.ser==="all"||cards[j].dataset.ser===lvtSel.ser);
+      cards[j].style.display=ok?"":"none";
+      if(ok){n++;lvtVis.push(j);}
+    }
+    document.getElementById("lvtCount").textContent=n;
+    document.getElementById("lvtCountEn").textContent=n;
+    document.getElementById("lvtEmpty").style.display=n?"none":"block";
+    var g=document.getElementById("lvtGrid"), y=g.getBoundingClientRect().top+window.pageYOffset-90;
+    if(window.pageYOffset>y) window.scrollTo(0,y);
+  }
+  function paintLvt(i){
+    var f=LVTS[i], en=document.documentElement.querySelector("[data-lang]").getAttribute("data-lang")==="en";
+    document.getElementById("viewerImg").src="img-lvt-"+f.s+".jpg";
+    document.getElementById("viewerImg").alt="도든 LVT "+f.c;
+    document.getElementById("lvtCode").textContent=f.c;
+    document.getElementById("lvtName").textContent=en?f.en:f.ko;
+    document.getElementById("lvtTh").textContent=f.th+(f.th==="2T"?" · 470 × 470mm":" · 600 × 600mm");
+    document.getElementById("lvtSer").textContent=en?f.serEn:f.ser;
+    document.getElementById("viewerNum").textContent=(lvtVis.indexOf(i)+1)+" / "+lvtVis.length;
+  }
+  function openLvt(i){lvtCur=i;paintLvt(i);var v=document.getElementById("viewer");v.style.display="flex";document.body.style.overflow="hidden";}
+  function closeViewer(e,force){if(force||e.target.id==="viewer"){document.getElementById("viewer").style.display="none";document.body.style.overflow="";}if(e)e.stopPropagation();}
+  function stepViewer(e,d){e.stopPropagation();var p=lvtVis.indexOf(lvtCur);p=(p+d+lvtVis.length)%lvtVis.length;lvtCur=lvtVis[p];paintLvt(lvtCur);}
+  document.addEventListener("keydown",function(e){var v=document.getElementById("viewer");if(v.style.display!=="flex")return;if(e.key==="Escape"){v.style.display="none";document.body.style.overflow="";}if(e.key==="ArrowRight")stepViewer(e,1);if(e.key==="ArrowLeft")stepViewer(e,-1);});
   </script>
 
 <footer style="background:#14161A;color:rgba(237,234,229,0.7);padding:72px 0 44px">

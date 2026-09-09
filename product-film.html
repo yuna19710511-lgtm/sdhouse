@@ -129,7 +129,7 @@
   <section id="swatches" style="max-width:1340px;margin:0 auto;padding:clamp(44px,6vw,72px) clamp(18px,4vw,32px) 0">
     <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px 24px;margin-bottom:24px">
       <h2 style="margin:0;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:#A79E92"><span class="i18n-ko">스와치 라이브러리</span><span class="i18n-en">Swatch library</span></h2>
-      <span style="font-size:12.5px;color:#8A8378"><span class="i18n-ko">실물 스캔 · 총 <span id="filmCount">37</span>종</span><span class="i18n-en">Scanned from stock · <span id="filmCountEn">37</span> codes</span></span>
+      <span style="font-size:12.5px;color:#8A8378"><span class="i18n-ko">실물 스캔 · 총 <span id="filmCount">38</span>종</span><span class="i18n-en">Scanned from stock · <span id="filmCountEn">38</span> codes</span></span>
     </div>
 
     <div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#A79E92;margin-bottom:10px"><span class="i18n-ko">계열</span><span class="i18n-en">Finish</span></div>
@@ -137,7 +137,7 @@
       <button class="gtab gtab-on" onclick="filmFilter('cat','all',this)"><span class="i18n-ko">전체</span><span class="i18n-en">All</span></button>
       <button class="gtab" onclick="filmFilter('cat','wood',this)"><span class="i18n-ko">우드</span><span class="i18n-en">Wood</span> <span style="color:#A79E92">9</span></button>
       <button class="gtab" onclick="filmFilter('cat','stone',this)"><span class="i18n-ko">스톤 · 테라조</span><span class="i18n-en">Stone</span> <span style="color:#A79E92">5</span></button>
-      <button class="gtab" onclick="filmFilter('cat','pattern',this)"><span class="i18n-ko">패턴</span><span class="i18n-en">Pattern</span> <span style="color:#A79E92">3</span></button>
+      <button class="gtab" onclick="filmFilter('cat','pattern',this)"><span class="i18n-ko">패턴</span><span class="i18n-en">Pattern</span> <span style="color:#A79E92">4</span></button>
       <button class="gtab" onclick="filmFilter('cat','solid',this)"><span class="i18n-ko">솔리드</span><span class="i18n-en">Solid</span> <span style="color:#A79E92">20</span></button>
     </div>
 
@@ -146,7 +146,7 @@
       <button class="gtab gtab-on" onclick="filmFilter('site','all',this)"><span class="i18n-ko">전체</span><span class="i18n-en">All</span></button>
       <button class="gtab" onclick="filmFilter('site','dunkin',this)"><span class="i18n-ko">던킨도너츠</span><span class="i18n-en">Dunkin'</span> <span style="color:#A79E92">12</span></button>
       <button class="gtab" onclick="filmFilter('site','br',this)"><span class="i18n-ko">배스킨라빈스</span><span class="i18n-en">Baskin-Robbins</span> <span style="color:#A79E92">9</span></button>
-      <button class="gtab" onclick="filmFilter('site','lotteria',this)"><span class="i18n-ko">롯데리아</span><span class="i18n-en">Lotteria</span> <span style="color:#A79E92">4</span></button>
+      <button class="gtab" onclick="filmFilter('site','lotteria',this)"><span class="i18n-ko">롯데리아</span><span class="i18n-en">Lotteria</span> <span style="color:#A79E92">5</span></button>
       <button class="gtab" onclick="filmFilter('site','angelinus',this)"><span class="i18n-ko">엔제리너스</span><span class="i18n-en">Angel-in-us</span> <span style="color:#A79E92">3</span></button>
       <button class="gtab" onclick="filmFilter('site','stanbru',this)"><span class="i18n-ko">스탠브루 커피</span><span class="i18n-en">STANBRU Coffee</span> <span style="color:#A79E92">2</span></button>
       <button class="gtab" onclick="filmFilter('site','jamba',this)"><span class="i18n-ko">잠바주스</span><span class="i18n-en">Jamba Juice</span> <span style="color:#A79E92">2</span></button>
@@ -314,7 +314,16 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="stanbru" onclick="openFilm(17)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(17)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="pattern" data-site="lotteria" onclick="openFilm(17)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(17)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+          <img src="img-film-lo-lopt.jpg" alt="인테리어 필름 LO_LOPT 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
+          <div style="padding:15px 18px 18px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
+              <span style="font-size:13.5px;font-weight:600;letter-spacing:0.02em">LO_LOPT</span>
+              <span style="font-size:11px;letter-spacing:0.06em;color:#A79E92">1220 W</span>
+            </div>
+          </div>
+        </figure>
+        <figure data-cat="solid" data-site="stanbru" onclick="openFilm(18)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(18)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-sbc-brown.jpg" alt="인테리어 필름 SBC-BROWN 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -323,7 +332,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="stanbru" onclick="openFilm(18)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(18)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="stanbru" onclick="openFilm(19)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(19)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-lt2624f.jpg" alt="인테리어 필름 LT2624F 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -332,7 +341,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="jamba" onclick="openFilm(19)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(19)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="jamba" onclick="openFilm(20)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(20)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-sd4430fsk.jpg" alt="인테리어 필름 SD4430FSK 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -341,7 +350,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="br" onclick="openFilm(20)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(20)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="br" onclick="openFilm(21)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(21)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-sd816g.jpg" alt="인테리어 필름 SD816G 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -350,7 +359,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="br" onclick="openFilm(21)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(21)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="br" onclick="openFilm(22)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(22)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-sd717bg.jpg" alt="인테리어 필름 SD717BG 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -359,7 +368,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="br" onclick="openFilm(22)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(22)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="br" onclick="openFilm(23)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(23)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-ss702b4ex.jpg" alt="인테리어 필름 SS702B4EX 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -368,7 +377,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="br" onclick="openFilm(23)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(23)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="br" onclick="openFilm(24)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(24)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-sd715bl.jpg" alt="인테리어 필름 SD715BL 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -378,7 +387,7 @@
             <div style="margin-top:7px;font-size:12px;color:#4E7B93"><span class="i18n-ko">방염</span><span class="i18n-en">Flame-retardant</span></div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="krispy" onclick="openFilm(24)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(24)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="krispy" onclick="openFilm(25)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(25)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-lt120.jpg" alt="인테리어 필름 LT120 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -387,7 +396,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="krispy" onclick="openFilm(25)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(25)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="krispy" onclick="openFilm(26)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(26)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-lt216f.jpg" alt="인테리어 필름 LT216F 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -396,7 +405,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="angelinus" onclick="openFilm(26)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(26)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="angelinus" onclick="openFilm(27)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(27)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-lt655f.jpg" alt="인테리어 필름 LT655F 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -405,7 +414,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="angelinus" onclick="openFilm(27)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(27)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="angelinus" onclick="openFilm(28)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(28)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-lt125.jpg" alt="인테리어 필름 LT125 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -414,7 +423,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="lotteria" onclick="openFilm(28)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(28)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="lotteria" onclick="openFilm(29)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(29)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-lo-yellow.jpg" alt="인테리어 필름 LO_YELLOW 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -423,7 +432,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="lotteria" onclick="openFilm(29)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(29)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="lotteria" onclick="openFilm(30)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(30)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-lo-red.jpg" alt="인테리어 필름 LO_RED 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -432,7 +441,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="lotteria" onclick="openFilm(30)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(30)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="lotteria" onclick="openFilm(31)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(31)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-lo-etch.jpg" alt="인테리어 필름 LO_ETCH 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -441,7 +450,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="dunkin" onclick="openFilm(31)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(31)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="dunkin" onclick="openFilm(32)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(32)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-sd472f.jpg" alt="인테리어 필름 SD472F 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -450,7 +459,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="dunkin" onclick="openFilm(32)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(32)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="dunkin" onclick="openFilm(33)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(33)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-ss701b3ex.jpg" alt="인테리어 필름 SS701B3EX 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -459,7 +468,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="dunkin" onclick="openFilm(33)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(33)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="dunkin" onclick="openFilm(34)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(34)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-sd716dg.jpg" alt="인테리어 필름 SD716DG 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -468,7 +477,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="dunkin" onclick="openFilm(34)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(34)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="dunkin" onclick="openFilm(35)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(35)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-sd899s11f.jpg" alt="인테리어 필름 SD899S11F 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -477,7 +486,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="dunkin" onclick="openFilm(35)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(35)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="dunkin" onclick="openFilm(36)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(36)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-s44d10.jpg" alt="인테리어 필름 S44D10 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -486,7 +495,7 @@
             </div>
           </div>
         </figure>
-        <figure data-cat="solid" data-site="dunkin" onclick="openFilm(36)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(36)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
+        <figure data-cat="solid" data-site="dunkin" onclick="openFilm(37)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(37)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-s905d12-2j.jpg" alt="인테리어 필름 S905D12-2J 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
           <div style="padding:15px 18px 18px">
             <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
@@ -545,7 +554,7 @@
     <div id="filmNum" style="position:absolute;bottom:22px;left:0;right:0;text-align:center;color:rgba(255,255,255,0.6);font-size:12px;letter-spacing:0.1em"></div>
   </div>
   <script>
-  var FILMS=[{"c":"SBW0107F","s":"sbw0107f","site":"스타벅스","siteEn":"Starbucks","url":"site-starbucks.html","w":"1220","fl":false,"cat":"우드"},{"c":"LT907F","s":"lt907f","site":"마루가메우동","siteEn":"Marugame Udon","url":"site-marugame.html","w":"1220","fl":false,"cat":"우드"},{"c":"SW815-UV3","s":"sw815-uv3","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"우드"},{"c":"SD071TF","s":"sd071tf","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"우드"},{"c":"SD900FW","s":"sd900fw","site":"잠바주스","siteEn":"Jamba Juice","url":"site-jamba.html","w":"1220","fl":false,"cat":"우드"},{"c":"SD901CF","s":"sd901cf","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"우드"},{"c":"SD902G","s":"sd902g","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"우드"},{"c":"SD904F","s":"sd904f","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"우드"},{"c":"SD9011EX","s":"sd9011ex","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"우드"},{"c":"SD914TRF","s":"sd914trf","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"스톤 · 테라조"},{"c":"ST914EX","s":"st914ex","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"스톤 · 테라조"},{"c":"FSD704TR","s":"fsd704tr","site":"복주걱","siteEn":"Bokjugeok","url":"","w":"1220","fl":false,"cat":"스톤 · 테라조"},{"c":"SD906CF","s":"sd906cf","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"스톤 · 테라조"},{"c":"ST9061EX","s":"st9061ex","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"스톤 · 테라조"},{"c":"SD915G","s":"sd915g","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"패턴"},{"c":"LO_BGPT_V","s":"lo-bgpt-v","site":"롯데리아","siteEn":"Lotteria","url":"site-lotteria.html","w":"1220","fl":false,"cat":"패턴"},{"c":"LT4645","s":"lt4645","site":"엔제리너스","siteEn":"Angel-in-us","url":"","w":"1220","fl":false,"cat":"패턴"},{"c":"SBC-BROWN","s":"sbc-brown","site":"스탠브루 커피","siteEn":"STANBRU Coffee","url":"site-stanbru.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"LT2624F","s":"lt2624f","site":"스탠브루 커피","siteEn":"STANBRU Coffee","url":"site-stanbru.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SD4430FSK","s":"sd4430fsk","site":"잠바주스","siteEn":"Jamba Juice","url":"site-jamba.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SD816G","s":"sd816g","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SD717BG","s":"sd717bg","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SS702B4EX","s":"ss702b4ex","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SD715BL","s":"sd715bl","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":true,"cat":"솔리드"},{"c":"LT120","s":"lt120","site":"크리스피크림","siteEn":"Krispy Kreme","url":"site-krispy.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"LT216F","s":"lt216f","site":"크리스피크림","siteEn":"Krispy Kreme","url":"site-krispy.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"LT655F","s":"lt655f","site":"엔제리너스","siteEn":"Angel-in-us","url":"","w":"1220","fl":false,"cat":"솔리드"},{"c":"LT125","s":"lt125","site":"엔제리너스","siteEn":"Angel-in-us","url":"","w":"1220","fl":false,"cat":"솔리드"},{"c":"LO_YELLOW","s":"lo-yellow","site":"롯데리아","siteEn":"Lotteria","url":"site-lotteria.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"LO_RED","s":"lo-red","site":"롯데리아","siteEn":"Lotteria","url":"site-lotteria.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"LO_ETCH","s":"lo-etch","site":"롯데리아","siteEn":"Lotteria","url":"site-lotteria.html","w":"1000","fl":false,"cat":"솔리드"},{"c":"SD472F","s":"sd472f","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SS701B3EX","s":"ss701b3ex","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SD716DG","s":"sd716dg","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SD899S11F","s":"sd899s11f","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"S44D10","s":"s44d10","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"S905D12-2J","s":"s905d12-2j","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"솔리드"}];
+  var FILMS=[{"c":"SBW0107F","s":"sbw0107f","site":"스타벅스","siteEn":"Starbucks","url":"site-starbucks.html","w":"1220","fl":false,"cat":"우드"},{"c":"LT907F","s":"lt907f","site":"마루가메우동","siteEn":"Marugame Udon","url":"site-marugame.html","w":"1220","fl":false,"cat":"우드"},{"c":"SW815-UV3","s":"sw815-uv3","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"우드"},{"c":"SD071TF","s":"sd071tf","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"우드"},{"c":"SD900FW","s":"sd900fw","site":"잠바주스","siteEn":"Jamba Juice","url":"site-jamba.html","w":"1220","fl":false,"cat":"우드"},{"c":"SD901CF","s":"sd901cf","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"우드"},{"c":"SD902G","s":"sd902g","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"우드"},{"c":"SD904F","s":"sd904f","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"우드"},{"c":"SD9011EX","s":"sd9011ex","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"우드"},{"c":"SD914TRF","s":"sd914trf","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"스톤 · 테라조"},{"c":"ST914EX","s":"st914ex","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"스톤 · 테라조"},{"c":"FSD704TR","s":"fsd704tr","site":"복주걱","siteEn":"Bokjugeok","url":"","w":"1220","fl":false,"cat":"스톤 · 테라조"},{"c":"SD906CF","s":"sd906cf","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"스톤 · 테라조"},{"c":"ST9061EX","s":"st9061ex","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"스톤 · 테라조"},{"c":"SD915G","s":"sd915g","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"패턴"},{"c":"LO_BGPT_V","s":"lo-bgpt-v","site":"롯데리아","siteEn":"Lotteria","url":"site-lotteria.html","w":"1220","fl":false,"cat":"패턴"},{"c":"LT4645","s":"lt4645","site":"엔제리너스","siteEn":"Angel-in-us","url":"","w":"1220","fl":false,"cat":"패턴"},{"c":"LO_LOPT","s":"lo-lopt","site":"롯데리아","siteEn":"Lotteria","url":"site-lotteria.html","w":"1220","fl":false,"cat":"패턴"},{"c":"SBC-BROWN","s":"sbc-brown","site":"스탠브루 커피","siteEn":"STANBRU Coffee","url":"site-stanbru.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"LT2624F","s":"lt2624f","site":"스탠브루 커피","siteEn":"STANBRU Coffee","url":"site-stanbru.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SD4430FSK","s":"sd4430fsk","site":"잠바주스","siteEn":"Jamba Juice","url":"site-jamba.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SD816G","s":"sd816g","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SD717BG","s":"sd717bg","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SS702B4EX","s":"ss702b4ex","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SD715BL","s":"sd715bl","site":"배스킨라빈스","siteEn":"Baskin-Robbins","url":"site-br.html","w":"1220","fl":true,"cat":"솔리드"},{"c":"LT120","s":"lt120","site":"크리스피크림","siteEn":"Krispy Kreme","url":"site-krispy.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"LT216F","s":"lt216f","site":"크리스피크림","siteEn":"Krispy Kreme","url":"site-krispy.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"LT655F","s":"lt655f","site":"엔제리너스","siteEn":"Angel-in-us","url":"","w":"1220","fl":false,"cat":"솔리드"},{"c":"LT125","s":"lt125","site":"엔제리너스","siteEn":"Angel-in-us","url":"","w":"1220","fl":false,"cat":"솔리드"},{"c":"LO_YELLOW","s":"lo-yellow","site":"롯데리아","siteEn":"Lotteria","url":"site-lotteria.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"LO_RED","s":"lo-red","site":"롯데리아","siteEn":"Lotteria","url":"site-lotteria.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"LO_ETCH","s":"lo-etch","site":"롯데리아","siteEn":"Lotteria","url":"site-lotteria.html","w":"1000","fl":false,"cat":"솔리드"},{"c":"SD472F","s":"sd472f","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SS701B3EX","s":"ss701b3ex","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SD716DG","s":"sd716dg","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"SD899S11F","s":"sd899s11f","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"S44D10","s":"s44d10","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"솔리드"},{"c":"S905D12-2J","s":"s905d12-2j","site":"던킨도너츠","siteEn":"Dunkin'","url":"site-dunkin.html","w":"1220","fl":false,"cat":"솔리드"}];
   var filmCur=0, filmVisible=FILMS.map(function(_,i){return i;});
   var filmSel={cat:'all',site:'all'};
   function filmFilter(kind,val,btn){

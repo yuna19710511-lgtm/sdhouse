@@ -127,6 +127,12 @@
         <figure data-i="12" onclick="openViewer(12)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openViewer(12)}" tabindex="0" role="button" style="margin:0;cursor:zoom-in;background:#fff;outline-offset:2px">
           <img src="img-s-lotteria-13.jpg" alt="롯데리아 시공 사진 13" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
         </figure>
+        <figure data-i="13" onclick="openViewer(13)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openViewer(13)}" tabindex="0" role="button" style="margin:0;cursor:zoom-in;background:#fff">
+          <img src="img-s-lotteria-14.jpg" alt="롯데리아 시공 사진 14" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
+        </figure>
+        <figure data-i="14" onclick="openViewer(14)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openViewer(14)}" tabindex="0" role="button" style="margin:0;cursor:zoom-in;background:#fff">
+          <img src="img-s-lotteria-15.jpg" alt="롯데리아 시공 사진 15" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
+        </figure>
     </div>
     <p style="margin:26px 0 0;font-size:12.5px;color:#8A8378;line-height:1.8"><span class="i18n-ko">사진을 클릭하면 크게 보실 수 있습니다.</span><span class="i18n-en">Click a photo to enlarge.</span></p>
   </section>
@@ -152,7 +158,7 @@
     <div id="viewerNum" style="position:absolute;bottom:22px;left:0;right:0;text-align:center;color:rgba(255,255,255,0.6);font-size:12px;letter-spacing:0.1em"></div>
   </div>
   <script>
-  var SHOTS=["img-s-lotteria-01.jpg","img-s-lotteria-02.jpg","img-s-lotteria-03.jpg","img-s-lotteria-04.jpg","img-s-lotteria-05.jpg","img-s-lotteria-06.jpg","img-s-lotteria-07.jpg","img-s-lotteria-08.jpg","img-s-lotteria-09.jpg","img-s-lotteria-10.jpg","img-s-lotteria-11.jpg","img-s-lotteria-12.jpg","img-s-lotteria-13.jpg"], cur=0;
+  var SHOTS=["img-s-lotteria-01.jpg","img-s-lotteria-02.jpg","img-s-lotteria-03.jpg","img-s-lotteria-04.jpg","img-s-lotteria-05.jpg","img-s-lotteria-06.jpg","img-s-lotteria-07.jpg","img-s-lotteria-08.jpg","img-s-lotteria-09.jpg","img-s-lotteria-10.jpg","img-s-lotteria-11.jpg","img-s-lotteria-12.jpg","img-s-lotteria-13.jpg","img-s-lotteria-14.jpg","img-s-lotteria-15.jpg"], cur=0;
   function openViewer(i){cur=i;var v=document.getElementById('viewer');document.getElementById('viewerImg').src=SHOTS[i];document.getElementById('viewerNum').textContent=(i+1)+' / '+SHOTS.length;v.style.display='flex';document.body.style.overflow='hidden';}
   function closeViewer(e,force){if(force||e.target.id==='viewer'){document.getElementById('viewer').style.display='none';document.body.style.overflow='';}if(e)e.stopPropagation();}
   function stepViewer(e,d){e.stopPropagation();cur=(cur+d+SHOTS.length)%SHOTS.length;document.getElementById('viewerImg').src=SHOTS[cur];document.getElementById('viewerNum').textContent=(cur+1)+' / '+SHOTS.length;}
