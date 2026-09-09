@@ -157,6 +157,10 @@
       <button class="gtab" onclick="filmFilter('site','bokjugeok',this)"><span class="i18n-ko">복주걱</span><span class="i18n-en">Bokjugeok</span> <span style="color:#A79E92">1</span></button>
     </div>
 
+    <div id="filmEmpty" style="display:none;padding:64px 20px;text-align:center;background:#fff;box-shadow:0 0 0 1px rgba(20,22,26,0.12);font-size:14px;color:#6E6862;letter-spacing:0.01em">
+      <span class="i18n-ko">선택하신 조건에 해당하는 필름이 없습니다. 다른 계열이나 현장을 선택해 주세요.</span><span class="i18n-en">No films match this combination. Try another series or site.</span>
+    </div>
+
     <div id="filmGrid" class="hairgrid g4" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px">
         <figure data-cat="wood" data-site="starbucks" onclick="openFilm(0)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openFilm(0)}" tabindex="0" role="button" style="margin:0;background:#fff;cursor:zoom-in">
           <img src="img-film-sbw0107f.jpg" alt="인테리어 필름 SBW0107F 실물 스와치" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />
@@ -559,6 +563,11 @@
     }
     document.getElementById('filmCount').textContent=n;
     document.getElementById('filmCountEn').textContent=n;
+    var em=document.getElementById('filmEmpty');
+    if(em) em.style.display=n?'none':'block';
+    var g=document.getElementById('filmGrid');
+    var y=g.getBoundingClientRect().top+window.pageYOffset-90;
+    if(window.pageYOffset>y) window.scrollTo(0,y);
   }
   function paintFilm(i){
     var f=FILMS[i], en=document.documentElement.querySelector('[data-lang]').getAttribute('data-lang')==='en';
