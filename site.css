@@ -12,6 +12,7 @@
 
 /* 셀 경계선 — 빈 칸에 배경이 비치지 않도록 각 셀에 직접 그립니다 */
 .hairgrid > * { box-shadow: 0 0 0 1px rgba(20,22,26,0.12); }
+.prodgrid > a > img { aspect-ratio: auto !important; height: clamp(220px, 23vw, 320px) !important; display: block; }
 .hairgrid-dark > * { box-shadow: 0 0 0 1px rgba(255,255,255,0.12); }
 
 
