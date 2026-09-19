@@ -538,5 +538,35 @@
 <script src="site.js"></script>
 <button id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="맨 위로" style="position:fixed;right:clamp(14px,3vw,28px);bottom:calc(clamp(14px,3vw,28px) + 62px);z-index:65;width:48px;height:48px;border:1px solid rgba(20,22,26,0.18);background:rgba(247,245,242,0.92);backdrop-filter:blur(8px);color:#14161A;font-size:17px;line-height:1;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s">↑</button>
 <script>(function(){var b=document.getElementById('toTop');function u(){var on=window.scrollY>600;b.style.opacity=on?'1':'0';b.style.pointerEvents=on?'auto':'none';}window.addEventListener('scroll',u,{passive:true});u();})();</script>
+<div id="sdNotice" role="dialog" aria-modal="true" aria-label="추석 휴무 안내" style="display:none;position:fixed;inset:0;z-index:120;background:rgba(10,11,13,0.62);backdrop-filter:blur(3px);align-items:center;justify-content:center;padding:24px">
+  <div style="width:min(420px,92vw);max-height:92vh;display:flex;flex-direction:column;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,0.4);animation:sdRise .45s ease both">
+    <div style="position:relative;overflow:auto">
+      <img src="notice-chuseok-2026.png" alt="추석 휴무 안내 — 휴무 기간 9월 24일(목)~9월 27일(일), 9월 28일(월) 정상영업" style="width:100%;height:auto" />
+      <button type="button" data-sdn-x aria-label="닫기" style="position:absolute;top:12px;right:12px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(20,22,26,0.45);color:#fff;font-size:17px;line-height:1;cursor:pointer">✕</button>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;border-top:1px solid rgba(20,22,26,0.1);background:#FAF8F5">
+      <label style="display:flex;align-items:center;gap:8px;font-size:12.5px;color:#5C5E63;cursor:pointer"><input type="checkbox" data-sdn-hide style="width:15px;height:15px;accent-color:#4E7B93" /><span>오늘 하루 보지 않기</span></label>
+      <button type="button" data-sdn-x style="border:0;background:#14161A;color:#fff;font-size:12.5px;letter-spacing:.04em;padding:9px 18px;cursor:pointer">닫기</button>
+    </div>
+  </div>
+</div>
+<script>(function(){
+  var END = new Date(2026, 8, 27, 23, 59, 59); /* 2026-09-27 노출 종료 */
+  var el = document.getElementById('sdNotice');
+  if (!el || new Date() > END) return;
+  var KEY = 'sdNoticeChuseok2026';
+  try { if (localStorage.getItem(KEY) && Date.now() < +localStorage.getItem(KEY)) return; } catch (e) {}
+  var cb = el.querySelector('[data-sdn-hide]');
+  function close(){
+    el.style.display = 'none';
+    document.documentElement.style.overflow = '';
+    if (cb && cb.checked) { try { localStorage.setItem(KEY, String(Date.now() + 864e5)); } catch (e) {} }
+  }
+  el.style.display = 'flex';
+  document.documentElement.style.overflow = 'hidden';
+  Array.prototype.forEach.call(el.querySelectorAll('[data-sdn-x]'), function(b){ b.addEventListener('click', close); });
+  el.addEventListener('click', function(e){ if (e.target === el) close(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
+})();</script>
 </body>
 </html>
