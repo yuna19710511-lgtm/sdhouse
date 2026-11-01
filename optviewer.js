@@ -11,9 +11,9 @@
       '<button data-x="1" aria-label="닫기" style="position:absolute;top:20px;right:24px;background:none;border:0;color:rgba(255,255,255,0.7);font-size:30px;line-height:1;cursor:pointer">×</button>'+
       '<button data-s="-1" aria-label="이전" style="left:14px;'+nb+'">‹</button>'+
       '<button data-s="1" aria-label="다음" style="right:14px;'+nb+'">›</button>'+
-      '<div data-in="1" style="display:flex;flex-wrap:wrap;align-items:stretch;gap:1px;max-width:900px;width:100%;max-height:100%;overflow:auto">'+
-        '<img id="ovImg" alt="" style="flex:1 1 320px;min-width:0;max-height:70vh;object-fit:cover;background:#fff;outline:1px solid rgba(20,22,26,0.13);outline-offset:-1px" />'+
-        '<div style="flex:0 1 260px;background:#fff;padding:26px 28px;display:flex;flex-direction:column;gap:16px">'+
+      '<div data-in="1" style="display:flex;flex-wrap:wrap;align-items:stretch;max-width:900px;width:100%;max-height:100%;overflow:auto;background:#fff">'+
+        '<div style="flex:1 1 320px;min-width:0;min-height:300px;max-height:70vh;position:relative;overflow:hidden;background:#EFEBE5"><img id="ovImg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04)" /></div>'+
+        '<div style="flex:0 1 260px;background:#fff;padding:26px 28px;display:flex;flex-direction:column;gap:16px;border-left:1px solid rgba(20,22,26,0.1)">'+
           '<div>'+lab('Item')+'<div id="ovCode" style="font-size:19px;font-weight:600;letter-spacing:0.02em;word-break:keep-all"></div></div>'+
           '<div id="ovSizeW">'+lab('Size')+'<div id="ovSize" style="font-size:14px;color:#3A3E44;line-height:1.7"></div></div>'+
           '<div id="ovFinW">'+lab('Finish')+'<div id="ovFin" style="font-size:14px;color:#3A3E44;line-height:1.7"></div></div>'+
