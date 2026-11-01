@@ -47,7 +47,6 @@
         <a href="products.html"><span class="i18n-ko">제품</span><span class="i18n-en">Products</span></a>
         <a href="projects.html" style="font-weight:600;border-bottom:1px solid #14161A;padding-bottom:3px"><span class="i18n-ko">납품실적</span><span class="i18n-en">Projects</span></a>
         <a href="gallery.html"><span class="i18n-ko">시공사진</span><span class="i18n-en">Photos</span></a>
-        <a href="quality.html"><span class="i18n-ko">인증·시공</span><span class="i18n-en">Quality</span></a>
         <a href="contact.html"><span class="i18n-ko">문의</span><span class="i18n-en">Contact</span></a>
       </nav>
       <div style="display:flex;align-items:center;gap:16px">
@@ -68,7 +67,6 @@
         <a href="products.html" style="padding:12px 0;font-size:15px;border-bottom:1px solid rgba(20,22,26,0.07)"><span class="i18n-ko">제품</span><span class="i18n-en">Products</span></a>
         <a href="projects.html" style="padding:12px 0;font-size:15px;font-weight:600;border-bottom:1px solid rgba(20,22,26,0.07)"><span class="i18n-ko">납품실적</span><span class="i18n-en">Projects</span></a>
         <a href="gallery.html" style="padding:12px 0;font-size:15px;border-bottom:1px solid rgba(20,22,26,0.07)"><span class="i18n-ko">시공사진</span><span class="i18n-en">Photos</span></a>
-        <a href="quality.html" style="padding:12px 0;font-size:15px;border-bottom:1px solid rgba(20,22,26,0.07)"><span class="i18n-ko">인증·시공</span><span class="i18n-en">Quality</span></a>
         <a href="contact.html" style="padding:12px 0;font-size:15px"><span class="i18n-ko">문의</span><span class="i18n-en">Contact</span></a>
       </div>
     </div>
@@ -92,125 +90,229 @@
   </section>
 
   <section style="max-width:1340px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(18px,4vw,32px) 0">
-    <div style="margin-bottom:clamp(24px,3vw,40px)">
+    <div style="margin-bottom:clamp(24px,3vw,36px)">
       <div style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:#A79E92;margin-bottom:18px">By category</div>
       <h2 style="margin:0 0 14px;font-family:'Noto Serif KR',serif;font-weight:300;font-size:clamp(24px,2.6vw,34px);line-height:1.4"><span class="i18n-ko">공간 유형별 스펙 및 납품 실적</span><span class="i18n-en">Deliveries by space type</span></h2>
-      <p style="margin:0;max-width:44em;font-size:14px;line-height:1.95;color:#5F5A52;font-weight:300"><span class="i18n-ko">공동주택부터 공항·공공시설까지, 조건이 전혀 다른 현장에서 반복 검증된 자재입니다.<br />유사 현장 사양은 문의 시 정리해 보내드립니다.</span><span class="i18n-en">From housing to airports and public facilities — materials proven across very different conditions.</span></p>
+      <p style="margin:0;max-width:44em;font-size:14px;line-height:1.95;color:#5F5A52;font-weight:300"><span class="i18n-ko">사진을 누르면 시공사진 또는 제품 페이지로 이동합니다.</span><span class="i18n-en">Tap a photo to see site photos or the product.</span></p>
     </div>
-    <article style="margin-top:clamp(36px,5vw,64px)">
-      <div style="position:relative;overflow:hidden">
-        <img src="img-prod-emotionwall.jpg" alt="주거공간" loading="lazy" style="width:100%;aspect-ratio:24/7;object-fit:cover;display:block" />
-        <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,14,17,0.72) 0%,rgba(12,14,17,0.42) 55%,rgba(12,14,17,0.16) 100%)"></div>
-        <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:clamp(22px,3.5vw,48px)">
-          <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(21px,2.4vw,30px);color:#fff;text-shadow:0 2px 24px rgba(12,14,17,0.4)"><span class="i18n-ko">주거공간</span><span class="i18n-en">Residential</span></h3>
-          <p style="margin:0 0 8px;font-size:13px;color:rgba(255,255,255,0.78);line-height:1.7"><span class="i18n-ko">아파트 · 공동주택 · 주상복합 · 오피스텔 · 견본주택</span><span class="i18n-en">Apartments · housing · mixed-use · officetels · model houses</span></p>
-        </div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:clamp(32px,4vw,44px)">
+      <button onclick="projTab('all',this)" style="display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font-size:14px;padding:10px 18px;cursor:pointer;border:1px solid #14161A;background:#14161A;color:#fff"><span class="i18n-ko">전체</span><span class="i18n-en">All</span> <span style="opacity:0.6">64</span></button>
+      <button onclick="projTab('res',this)" style="display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font-size:14px;padding:10px 18px;cursor:pointer;border:1px solid rgba(20,22,26,0.18);background:#fff;color:#14161A"><span class="i18n-ko">주거</span><span class="i18n-en">Residential</span> <span style="opacity:0.6">49</span></button>
+      <button onclick="projTab('work',this)" style="display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font-size:14px;padding:10px 18px;cursor:pointer;border:1px solid rgba(20,22,26,0.18);background:#fff;color:#14161A"><span class="i18n-ko">업무·기업</span><span class="i18n-en">Workplace</span> <span style="opacity:0.6">2</span></button>
+      <button onclick="projTab('fnb',this)" style="display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font-size:14px;padding:10px 18px;cursor:pointer;border:1px solid rgba(20,22,26,0.18);background:#fff;color:#14161A"><span class="i18n-ko">상업·F&amp;B</span><span class="i18n-en">Retail &amp; F&amp;B</span> <span style="opacity:0.6">10</span></button>
+      <button onclick="projTab('pub',this)" style="display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font-size:14px;padding:10px 18px;cursor:pointer;border:1px solid rgba(20,22,26,0.18);background:#fff;color:#14161A"><span class="i18n-ko">교육·공공</span><span class="i18n-en">Public</span> <span style="opacity:0.6">3</span></button>
+    </div>
+    <div data-ptype="res" style="margin-bottom:clamp(48px,6vw,72px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;padding-bottom:16px;border-bottom:1px solid rgba(20,22,26,0.14);margin-bottom:22px">
+        <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(20px,2.2vw,26px)"><span class="i18n-ko">주거</span><span class="i18n-en">Residential</span></h3>
+        <span style="font-size:13px;color:#8A8378"><span class="i18n-ko">49곳</span><span class="i18n-en">49 sites</span></span>
       </div>
-      <div class="hairgrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;margin-top:1px">
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">서울숲 트리마제</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">트리마제 순천</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">트리마제 양산</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">여수 트리마제 벨마레</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">논산 트리븐</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">안동 트리븐</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">삼척 트리븐</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">창원 트리븐</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">서산 트리븐</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">김해 트리븐</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">파주운정3 A3블럭</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">곤지암역세권 제일풍경채 A1-3BL</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">의왕고천 B2</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">인천검단 A25블럭</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">양주역 제일풍경채 위너스카이</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">신분평 더헤이시티 제일풍경채</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">광주 탄벌</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">광주 첨단 제일풍경채 파크원</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">남원주 역세권</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">울산 다운2차</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">부산장안 우미린</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">오산서2</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">원주역 우미린 더 스카이</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">화성남양 1차</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">강릉송정 우미린</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">고양 창릉 견본주택</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">수원 영통 견본주택</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">평택 고덕 우미린 프레스티지</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">세종3차 견본주택</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">광주 송정 리버파크</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">순천용당 단위세대</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">담양고서</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">남양주 장현</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">이천대월 견본주택</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">청주 더 벨루체 견본주택</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">세종시 5-1 L12블럭</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">의정부역 양우내안애</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">양주회천중앙역 파라곤</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">검단신도시 동양파라곤</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">안동 리벨 스카이파크</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">부산에코델타시티</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">오산세교 아테라</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">문수로 라티에르 673 주상복합</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">통교동 아파트 · 오피스텔</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">용인 신갈 타운</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">광주 북구 챔피언스시티</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">마산 배방 휴대지구</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">배방 필하우스 리버시티</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">남서 서대신4구역</div>
+      <div class="hairgrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:1px">
+        <a href="product-lineboard.html" style="background:#fff;display:flex;flex-direction:column">
+          <div style="position:relative;overflow:hidden"><img src="img-proj-doosan.png" alt="트리마제 순천" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" /></div>
+          <div style="padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <div style="font-family:'Noto Serif KR',serif;font-size:17.5px;line-height:1.45;word-break:keep-all">트리마제 순천</div>
+            <div style="font-size:12.5px;color:#8A8378;line-height:1.7;word-break:keep-all">SD 라인보드</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:0.08em;color:#4E7B93"><span class="i18n-ko">제품 보기</span><span class="i18n-en">View product</span> →</div>
+          </div>
+        </a>
+        <a href="product-lineboard.html" style="background:#fff;display:flex;flex-direction:column">
+          <div style="position:relative;overflow:hidden"><img src="img-proj-jeil.png" alt="신분평 더헤이시티 제일풍경채" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" /></div>
+          <div style="padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <div style="font-family:'Noto Serif KR',serif;font-size:17.5px;line-height:1.45;word-break:keep-all">신분평 더헤이시티 제일풍경채</div>
+            <div style="font-size:12.5px;color:#8A8378;line-height:1.7;word-break:keep-all">SD 라인보드</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:0.08em;color:#4E7B93"><span class="i18n-ko">제품 보기</span><span class="i18n-en">View product</span> →</div>
+          </div>
+        </a>
       </div>
-    </article>
-    <article style="margin-top:clamp(36px,5vw,64px)">
-      <div style="position:relative;overflow:hidden">
-        <img src="img-hero-lobby.jpg" alt="업무·기업공간" loading="lazy" style="width:100%;aspect-ratio:24/7;object-fit:cover;display:block" />
-        <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,14,17,0.72) 0%,rgba(12,14,17,0.42) 55%,rgba(12,14,17,0.16) 100%)"></div>
-        <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:clamp(22px,3.5vw,48px)">
-          <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(21px,2.4vw,30px);color:#fff;text-shadow:0 2px 24px rgba(12,14,17,0.4)"><span class="i18n-ko">업무·기업공간</span><span class="i18n-en">Workplace</span></h3>
-          <p style="margin:0 0 8px;font-size:13px;color:rgba(255,255,255,0.78);line-height:1.7"><span class="i18n-ko">오피스 · 사옥 · 업무시설 · 기업 라운지</span><span class="i18n-en">Offices · headquarters · corporate lounges</span></p>
-        </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:8px 26px;font-size:14px;line-height:1.75;color:#3A3E44;word-break:keep-all">
+        <span>서울숲 트리마제</span>
+        <span>트리마제 양산</span>
+        <span>여수 트리마제 벨마레</span>
+        <span>논산 트리븐</span>
+        <span>안동 트리븐</span>
+        <span>삼척 트리븐</span>
+        <span>창원 트리븐</span>
+        <span>서산 트리븐</span>
+        <span>김해 트리븐</span>
+        <span>파주운정3 A3블럭</span>
+        <span>곤지암역세권 제일풍경채 A1-3BL</span>
+        <span>의왕고천 B2</span>
+        <span>인천검단 A25블럭</span>
+        <span>양주역 제일풍경채 위너스카이</span>
+        <span>광주 탄벌</span>
+        <span>광주 첨단 제일풍경채 파크원</span>
+        <span>남원주 역세권</span>
+        <span>울산 다운2차</span>
+        <span>부산장안 우미린</span>
+        <span>오산서2</span>
+        <span>원주역 우미린 더 스카이</span>
+        <span>화성남양 1차</span>
+        <span>강릉송정 우미린</span>
+        <span>고양 창릉 견본주택</span>
+        <span>수원 영통 견본주택</span>
+        <span>평택 고덕 우미린 프레스티지</span>
+        <span>세종3차 견본주택</span>
+        <span>광주 송정 리버파크</span>
+        <span>순천용당 단위세대</span>
+        <span>담양고서</span>
+        <span>남양주 장현</span>
+        <span>이천대월 견본주택</span>
+        <span>청주 더 벨루체 견본주택</span>
+        <span>세종시 5-1 L12블럭</span>
+        <span>의정부역 양우내안애</span>
+        <span>양주회천중앙역 파라곤</span>
+        <span>검단신도시 동양파라곤</span>
+        <span>안동 리벨 스카이파크</span>
+        <span>부산에코델타시티</span>
+        <span>오산세교 아테라</span>
+        <span>문수로 라티에르 673 주상복합</span>
+        <span>통교동 아파트 · 오피스텔</span>
+        <span>용인 신갈 타운</span>
+        <span>광주 북구 챔피언스시티</span>
+        <span>마산 배방 휴대지구</span>
+        <span>배방 필하우스 리버시티</span>
+        <span>남서 서대신4구역</span>
       </div>
-      <div class="hairgrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;margin-top:1px">
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">오스템임플란트 사옥</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">신협</div>
+    </div>
+    <div data-ptype="work" style="margin-bottom:clamp(48px,6vw,72px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;padding-bottom:16px;border-bottom:1px solid rgba(20,22,26,0.14);margin-bottom:22px">
+        <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(20px,2.2vw,26px)"><span class="i18n-ko">업무·기업</span><span class="i18n-en">Workplace</span></h3>
+        <span style="font-size:13px;color:#8A8378"><span class="i18n-ko">2곳</span><span class="i18n-en">2 sites</span></span>
       </div>
-    </article>
-    <article style="margin-top:clamp(36px,5vw,64px)">
-      <div style="position:relative;overflow:hidden">
-        <img src="img-s-starbucks-01.jpg" alt="상업·F&amp;B공간" loading="lazy" style="width:100%;aspect-ratio:24/7;object-fit:cover;display:block" />
-        <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,14,17,0.72) 0%,rgba(12,14,17,0.42) 55%,rgba(12,14,17,0.16) 100%)"></div>
-        <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:clamp(22px,3.5vw,48px)">
-          <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(21px,2.4vw,30px);color:#fff;text-shadow:0 2px 24px rgba(12,14,17,0.4)"><span class="i18n-ko">상업·F&amp;B공간</span><span class="i18n-en">Retail &amp; F&amp;B</span></h3>
-          <p style="margin:0 0 8px;font-size:13px;color:rgba(255,255,255,0.78);line-height:1.7"><span class="i18n-ko">프랜차이즈 · 카페 · 음식점 · 리테일 · 쇼핑몰</span><span class="i18n-en">Franchise · cafés · restaurants · retail · malls</span></p>
-        </div>
+      <div class="hairgrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:1px">
+        <a href="site-shinhyup.html" style="background:#fff;display:flex;flex-direction:column">
+          <div style="position:relative;overflow:hidden"><img src="img-s-shinhyup-01.jpg" alt="신협" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" /></div>
+          <div style="padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <div style="font-family:'Noto Serif KR',serif;font-size:17.5px;line-height:1.45;word-break:keep-all">신협</div>
+            <div style="font-size:12.5px;color:#8A8378;line-height:1.7;word-break:keep-all">이모션월</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:0.08em;color:#4E7B93"><span class="i18n-ko">시공사진 보기</span><span class="i18n-en">View photos</span> →</div>
+          </div>
+        </a>
       </div>
-      <div class="hairgrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;margin-top:1px">
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">스타벅스</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">크리스피크림</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">배스킨라빈스</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">던킨</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">잠바주스</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">롯데리아</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">엔젤리너스</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">플레이팅하나</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">마루가메우동</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">스탠브루커피</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">한식미관 · 국립중앙박물관</div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:8px 26px;font-size:14px;line-height:1.75;color:#3A3E44;word-break:keep-all">
+        <a href="product-stile.html" style="color:#2F5F77;border-bottom:1px solid rgba(47,95,119,0.35)">오스템임플란트 사옥 →</a>
       </div>
-    </article>
-    <article style="margin-top:clamp(36px,5vw,64px)">
-      <div style="position:relative;overflow:hidden">
-        <img src="img-proj-incheon.jpg" alt="교육·공공시설" loading="lazy" style="width:100%;aspect-ratio:24/7;object-fit:cover;display:block" />
-        <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,14,17,0.72) 0%,rgba(12,14,17,0.42) 55%,rgba(12,14,17,0.16) 100%)"></div>
-        <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:clamp(22px,3.5vw,48px)">
-          <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(21px,2.4vw,30px);color:#fff;text-shadow:0 2px 24px rgba(12,14,17,0.4)"><span class="i18n-ko">교육·공공시설</span><span class="i18n-en">Public &amp; Education</span></h3>
-          <p style="margin:0 0 8px;font-size:13px;color:rgba(255,255,255,0.78);line-height:1.7"><span class="i18n-ko">학교 · 교육시설 · 관공서 · 공공기관</span><span class="i18n-en">Schools · public institutions</span></p>
-        </div>
+    </div>
+    <div data-ptype="fnb" style="margin-bottom:clamp(48px,6vw,72px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;padding-bottom:16px;border-bottom:1px solid rgba(20,22,26,0.14);margin-bottom:22px">
+        <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(20px,2.2vw,26px)"><span class="i18n-ko">상업·F&amp;B</span><span class="i18n-en">Retail &amp; F&amp;B</span></h3>
+        <span style="font-size:13px;color:#8A8378"><span class="i18n-ko">10곳</span><span class="i18n-en">10 sites</span></span>
       </div>
-      <div class="hairgrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;margin-top:1px">
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">인천국제공항 제1여객터미널</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">국립과천과학관</div>
-        <div style="background:#fff;padding:18px 20px;font-size:13.5px;line-height:1.5;color:#3A3E44;word-break:keep-all;display:flex;align-items:center;min-height:62px">국립중앙박물관</div>
+      <div class="hairgrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:1px">
+        <a href="site-starbucks.html" style="background:#fff;display:flex;flex-direction:column">
+          <div style="position:relative;overflow:hidden"><img src="img-s-starbucks-01.jpg" alt="스타벅스" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" /></div>
+          <div style="padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <div style="font-family:'Noto Serif KR',serif;font-size:17.5px;line-height:1.45;word-break:keep-all">스타벅스</div>
+            <div style="font-size:12.5px;color:#8A8378;line-height:1.7;word-break:keep-all">마그네슘보드 · 인테리어 필름</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:0.08em;color:#4E7B93"><span class="i18n-ko">시공사진 보기</span><span class="i18n-en">View photos</span> →</div>
+          </div>
+        </a>
+        <a href="site-br.html" style="background:#fff;display:flex;flex-direction:column">
+          <div style="position:relative;overflow:hidden"><img src="img-s-br-01.jpg" alt="배스킨라빈스" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" /></div>
+          <div style="padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <div style="font-family:'Noto Serif KR',serif;font-size:17.5px;line-height:1.45;word-break:keep-all">배스킨라빈스</div>
+            <div style="font-size:12.5px;color:#8A8378;line-height:1.7;word-break:keep-all">인테리어 필름 · 바닥재</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:0.08em;color:#4E7B93"><span class="i18n-ko">시공사진 보기</span><span class="i18n-en">View photos</span> →</div>
+          </div>
+        </a>
+        <a href="product-stile.html" style="background:#fff;display:flex;flex-direction:column">
+          <div style="position:relative;overflow:hidden"><img src="img-proj-angelinus.jpg" alt="엔젤리너스" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" /></div>
+          <div style="padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <div style="font-family:'Noto Serif KR',serif;font-size:17.5px;line-height:1.45;word-break:keep-all">엔젤리너스</div>
+            <div style="font-size:12.5px;color:#8A8378;line-height:1.7;word-break:keep-all">LDW+ 스타일</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:0.08em;color:#4E7B93"><span class="i18n-ko">제품 보기</span><span class="i18n-en">View product</span> →</div>
+          </div>
+        </a>
+        <a href="site-lotteria.html" style="background:#fff;display:flex;flex-direction:column">
+          <div style="position:relative;overflow:hidden"><img src="img-s-lotteria-01.jpg" alt="롯데리아" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" /></div>
+          <div style="padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <div style="font-family:'Noto Serif KR',serif;font-size:17.5px;line-height:1.45;word-break:keep-all">롯데리아</div>
+            <div style="font-size:12.5px;color:#8A8378;line-height:1.7;word-break:keep-all">인테리어 필름 · 마그네슘보드 · 바닥재</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:0.08em;color:#4E7B93"><span class="i18n-ko">시공사진 보기</span><span class="i18n-en">View photos</span> →</div>
+          </div>
+        </a>
+        <a href="site-krispy.html" style="background:#fff;display:flex;flex-direction:column">
+          <div style="position:relative;overflow:hidden"><img src="img-s-krispy-01.jpg" alt="크리스피크림" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" /></div>
+          <div style="padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <div style="font-family:'Noto Serif KR',serif;font-size:17.5px;line-height:1.45;word-break:keep-all">크리스피크림</div>
+            <div style="font-size:12.5px;color:#8A8378;line-height:1.7;word-break:keep-all">인테리어 필름 · 바닥재</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:0.08em;color:#4E7B93"><span class="i18n-ko">시공사진 보기</span><span class="i18n-en">View photos</span> →</div>
+          </div>
+        </a>
+        <a href="site-dunkin.html" style="background:#fff;display:flex;flex-direction:column">
+          <div style="position:relative;overflow:hidden"><img src="img-s-dunkin-01.jpg" alt="던킨" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" /></div>
+          <div style="padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <div style="font-family:'Noto Serif KR',serif;font-size:17.5px;line-height:1.45;word-break:keep-all">던킨</div>
+            <div style="font-size:12.5px;color:#8A8378;line-height:1.7;word-break:keep-all">인테리어 필름 · 바닥재</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:0.08em;color:#4E7B93"><span class="i18n-ko">시공사진 보기</span><span class="i18n-en">View photos</span> →</div>
+          </div>
+        </a>
+        <a href="site-jamba.html" style="background:#fff;display:flex;flex-direction:column">
+          <div style="position:relative;overflow:hidden"><img src="img-s-jamba-01.jpg" alt="잠바주스" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" /></div>
+          <div style="padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <div style="font-family:'Noto Serif KR',serif;font-size:17.5px;line-height:1.45;word-break:keep-all">잠바주스</div>
+            <div style="font-size:12.5px;color:#8A8378;line-height:1.7;word-break:keep-all">인테리어 필름</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:0.08em;color:#4E7B93"><span class="i18n-ko">시공사진 보기</span><span class="i18n-en">View photos</span> →</div>
+          </div>
+        </a>
+        <a href="site-marugame.html" style="background:#fff;display:flex;flex-direction:column">
+          <div style="position:relative;overflow:hidden"><img src="img-s-marugame-01.jpg" alt="마루가메우동" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" /></div>
+          <div style="padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <div style="font-family:'Noto Serif KR',serif;font-size:17.5px;line-height:1.45;word-break:keep-all">마루가메우동</div>
+            <div style="font-size:12.5px;color:#8A8378;line-height:1.7;word-break:keep-all">인테리어 필름 · 마그네슘보드</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:0.08em;color:#4E7B93"><span class="i18n-ko">시공사진 보기</span><span class="i18n-en">View photos</span> →</div>
+          </div>
+        </a>
+        <a href="site-stanbru.html" style="background:#fff;display:flex;flex-direction:column">
+          <div style="position:relative;overflow:hidden"><img src="img-s-stanbru-01.jpg" alt="스탠브루커피" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" /></div>
+          <div style="padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <div style="font-family:'Noto Serif KR',serif;font-size:17.5px;line-height:1.45;word-break:keep-all">스탠브루커피</div>
+            <div style="font-size:12.5px;color:#8A8378;line-height:1.7;word-break:keep-all">인테리어 필름 · STOWALL · 바닥재</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:0.08em;color:#4E7B93"><span class="i18n-ko">시공사진 보기</span><span class="i18n-en">View photos</span> →</div>
+          </div>
+        </a>
+        <a href="site-kfood.html" style="background:#fff;display:flex;flex-direction:column">
+          <div style="position:relative;overflow:hidden"><img src="img-s-kfood-01.jpg" alt="한식미관 · 국립중앙박물관" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" /></div>
+          <div style="padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <div style="font-family:'Noto Serif KR',serif;font-size:17.5px;line-height:1.45;word-break:keep-all">한식미관 · 국립중앙박물관</div>
+            <div style="font-size:12.5px;color:#8A8378;line-height:1.7;word-break:keep-all">인테리어 필름 · 마그네슘보드 · 바닥재</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:0.08em;color:#4E7B93"><span class="i18n-ko">시공사진 보기</span><span class="i18n-en">View photos</span> →</div>
+          </div>
+        </a>
       </div>
-    </article>
+    </div>
+    <div data-ptype="pub" style="margin-bottom:clamp(48px,6vw,72px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;padding-bottom:16px;border-bottom:1px solid rgba(20,22,26,0.14);margin-bottom:22px">
+        <h3 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(20px,2.2vw,26px)"><span class="i18n-ko">교육·공공</span><span class="i18n-en">Public</span></h3>
+        <span style="font-size:13px;color:#8A8378"><span class="i18n-ko">3곳</span><span class="i18n-en">3 sites</span></span>
+      </div>
+      <div class="hairgrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:1px">
+        <a href="product-film.html" style="background:#fff;display:flex;flex-direction:column">
+          <div style="position:relative;overflow:hidden"><img src="img-proj-incheon.jpg" alt="인천국제공항 T1 · 플레이팅하나" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" /></div>
+          <div style="padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <div style="font-family:'Noto Serif KR',serif;font-size:17.5px;line-height:1.45;word-break:keep-all">인천국제공항 T1 · 플레이팅하나</div>
+            <div style="font-size:12.5px;color:#8A8378;line-height:1.7;word-break:keep-all">인테리어 필름 · 마그네슘보드 · 이모션월</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:0.08em;color:#4E7B93"><span class="i18n-ko">제품 보기</span><span class="i18n-en">View product</span> →</div>
+          </div>
+        </a>
+        <a href="site-pohang.html" style="background:#fff;display:flex;flex-direction:column">
+          <div style="position:relative;overflow:hidden"><img src="img-s-pohang-01.jpg" alt="포항시청" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" /></div>
+          <div style="padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <div style="font-family:'Noto Serif KR',serif;font-size:17.5px;line-height:1.45;word-break:keep-all">포항시청</div>
+            <div style="font-size:12.5px;color:#8A8378;line-height:1.7;word-break:keep-all">MDF 시트판넬</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:0.08em;color:#4E7B93"><span class="i18n-ko">시공사진 보기</span><span class="i18n-en">View photos</span> →</div>
+          </div>
+        </a>
+      </div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:8px 26px;font-size:14px;line-height:1.75;color:#3A3E44;word-break:keep-all">
+        <span>국립과천과학관</span>
+      </div>
+    </div>
   </section>
+  <script>
+  function projTab(k,btn){var b=btn.parentNode.querySelectorAll('button');for(var i=0;i<b.length;i++){var on=b[i]===btn;b[i].style.background=on?'#14161A':'#fff';b[i].style.color=on?'#fff':'#14161A';b[i].style.borderColor=on?'#14161A':'rgba(20,22,26,0.18)';}var r=document.querySelectorAll('[data-ptype]');for(var j=0;j<r.length;j++)r[j].style.display=(k==='all'||r[j].getAttribute('data-ptype')===k)?'':'none';}
+  </script>
 
     <section style="max-width:1340px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(18px,4vw,32px) 0">
     <div>
@@ -402,7 +504,6 @@
           <div style="height:30px;display:flex;align-items:center"><a href="company.html" style="color:rgba(237,234,229,0.7)"><span class="i18n-ko">회사소개</span><span class="i18n-en">About</span></a></div>
           <div style="height:30px;display:flex;align-items:center"><a href="products.html" style="color:rgba(237,234,229,0.7)"><span class="i18n-ko">제품</span><span class="i18n-en">Products</span></a></div>
           <div style="height:30px;display:flex;align-items:center"><a href="projects.html" style="color:rgba(237,234,229,0.7)"><span class="i18n-ko">납품실적</span><span class="i18n-en">Projects</span></a></div>
-          <div style="height:30px;display:flex;align-items:center"><a href="quality.html" style="color:rgba(237,234,229,0.7)"><span class="i18n-ko">인증·시공</span><span class="i18n-en">Quality</span></a></div>
         </div>
       </div>
       <div style="flex:0 0 auto;font-size:13px;height:176px;display:flex;flex-direction:column">

@@ -47,7 +47,6 @@
         <a href="products.html" style="font-weight:600;border-bottom:1px solid #14161A;padding-bottom:3px"><span class="i18n-ko">제품</span><span class="i18n-en">Products</span></a>
         <a href="projects.html"><span class="i18n-ko">납품실적</span><span class="i18n-en">Projects</span></a>
         <a href="gallery.html"><span class="i18n-ko">시공사진</span><span class="i18n-en">Photos</span></a>
-        <a href="quality.html"><span class="i18n-ko">인증·시공</span><span class="i18n-en">Quality</span></a>
         <a href="contact.html"><span class="i18n-ko">문의</span><span class="i18n-en">Contact</span></a>
       </nav>
       <div style="display:flex;align-items:center;gap:16px">
@@ -68,7 +67,6 @@
         <a href="products.html" style="padding:12px 0;font-size:15px;border-bottom:1px solid rgba(20,22,26,0.07)"><span class="i18n-ko">제품</span><span class="i18n-en">Products</span></a>
         <a href="projects.html" style="padding:12px 0;font-size:15px;border-bottom:1px solid rgba(20,22,26,0.07)"><span class="i18n-ko">납품실적</span><span class="i18n-en">Projects</span></a>
         <a href="gallery.html" style="padding:12px 0;font-size:15px;border-bottom:1px solid rgba(20,22,26,0.07)"><span class="i18n-ko">시공사진</span><span class="i18n-en">Photos</span></a>
-        <a href="quality.html" style="padding:12px 0;font-size:15px;border-bottom:1px solid rgba(20,22,26,0.07)"><span class="i18n-ko">인증·시공</span><span class="i18n-en">Quality</span></a>
         <a href="contact.html" style="padding:12px 0;font-size:15px"><span class="i18n-ko">문의</span><span class="i18n-en">Contact</span></a>
       </div>
     </div>
@@ -81,7 +79,7 @@
       <div style="width:56px;height:1px;background:rgba(255,255,255,0.6);margin-bottom:22px"></div>
       <div style="font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#C9D8E0;margin-bottom:18px">Products</div>
       <h1 style="margin:0 0 14px;font-family:'Noto Serif KR',serif;font-weight:300;color:#fff;font-size:clamp(26px,3.6vw,46px);line-height:1.32;text-shadow:0 2px 30px rgba(12,14,17,0.3)">
-        <span class="i18n-ko">일곱 개의 마감 라인</span><span class="i18n-en">Seven finishing lines</span>
+        <span class="i18n-ko">분류별 전체 제품</span><span class="i18n-en">All products by category</span>
       </h1>
       <p style="margin:0;max-width:38em;color:rgba(255,255,255,0.88);font-size:clamp(13.5px,1.1vw,15px);line-height:1.9;font-weight:300">
         <span class="i18n-ko">제품을 선택하면 규격·성능·적용 사례를 자세히 보실 수 있습니다.</span>
@@ -90,109 +88,293 @@
     </div>
   </section>
 
-  <section style="max-width:1340px;margin:0 auto;padding:clamp(44px,6vw,72px) clamp(18px,4vw,32px) clamp(72px,10vw,120px)">
-    <div class="hairgrid prodgrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:1px">
-        <a href="product-film.html" style="background:#fff;display:block">
+  <section id="list" style="max-width:1340px;margin:0 auto;padding:clamp(44px,6vw,72px) clamp(18px,4vw,32px) clamp(40px,6vw,64px)">
+    <div role="tablist" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:clamp(32px,4vw,48px)">
+      <button class="gtab gtab-on" onclick="prodTab('all',this)"><span class="i18n-ko">전체</span><span class="i18n-en">All</span> <span style="opacity:0.55">25</span></button>
+      <button class="gtab" onclick="prodTab('wall',this)"><span class="i18n-ko">벽 · 천장</span><span class="i18n-en">Wall &amp; ceiling</span> <span style="opacity:0.55">9</span></button>
+      <button class="gtab" onclick="prodTab('floor',this)"><span class="i18n-ko">바닥</span><span class="i18n-en">Flooring</span> <span style="opacity:0.55">2</span></button>
+      <button class="gtab" onclick="prodTab('acoustic',this)"><span class="i18n-ko">방음 · 흡음</span><span class="i18n-en">Acoustic</span> <span style="opacity:0.55">10</span></button>
+      <button class="gtab" onclick="prodTab('exterior',this)"><span class="i18n-ko">실외</span><span class="i18n-en">Exterior</span> <span style="opacity:0.55">3</span></button>
+      <button class="gtab" onclick="prodTab('heating',this)"><span class="i18n-ko">난방</span><span class="i18n-en">Heating</span> <span style="opacity:0.55">1</span></button>
+    </div>
+    <div data-pgroup="wall" style="margin-bottom:clamp(48px,6vw,72px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;padding-bottom:18px;border-bottom:1px solid rgba(20,22,26,0.14);margin-bottom:24px">
+        <h2 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(20px,2.2vw,26px)"><span class="i18n-ko">벽 · 천장</span><span class="i18n-en">Wall &amp; ceiling</span></h2>
+        <span style="margin-left:auto;font-size:12.5px;color:#8A8378"><span class="i18n-ko">9개 품목</span><span class="i18n-en">9 items</span></span>
+      </div>
+      <div class="hairgrid prodgrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:1px">
+<a href="product-film.html" style="background:#fff;display:block">
           <img src="img-prod-film.jpg" alt="인테리어 필름" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
-          <div style="padding:26px 28px 30px">
-            <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px">
-              <span style="font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:0.22em;color:#A79E92">01</span>
-              <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4E7B93">Interior film</span>
-            </div>
-            <h2 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:21px"><span class="i18n-ko">인테리어 필름</span><span class="i18n-en">Interior Film</span></h2>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.08em;color:#8A8378;margin-bottom:14px">INTERIORFILM_SD</div>
+          <div style="padding:24px 26px 28px">
+            <div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4E7B93;margin-bottom:12px">Interior film</div>
+            <h3 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px"><span class="i18n-ko">인테리어 필름</span><span class="i18n-en">Interior Film</span></h3>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.08em;color:#8A8378;margin-bottom:12px">INTERIORFILM_SD</div>
             <p style="margin:0;font-size:13.5px;line-height:1.9;color:#6B655D;font-weight:300"><span class="i18n-ko">브랜드 표준 사양 지정 · 실물 스와치 37종 공개</span><span class="i18n-en">Brand-standard codes · 37 scanned swatches</span></p>
             <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
           </div>
         </a>
-        <a href="product-emotionwall.html" style="background:#fff;display:block">
+<a href="product-emotionwall.html" style="background:#fff;display:block">
           <img src="img-prod-emotionwall.jpg" alt="이모션월" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
-          <div style="padding:26px 28px 30px">
-            <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px">
-              <span style="font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:0.22em;color:#A79E92">02</span>
-              <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4E7B93">Wall panel</span>
-            </div>
-            <h2 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:21px"><span class="i18n-ko">이모션월</span><span class="i18n-en">Emotion Wall</span></h2>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.08em;color:#8A8378;margin-bottom:14px">Quartz Core Wall Panel</div>
+          <div style="padding:24px 26px 28px">
+            <div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4E7B93;margin-bottom:12px">Wall panel</div>
+            <h3 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px"><span class="i18n-ko">이모션월</span><span class="i18n-en">Emotion Wall</span></h3>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.08em;color:#8A8378;margin-bottom:12px">Quartz Core Wall Panel</div>
             <p style="margin:0;font-size:13.5px;line-height:1.9;color:#6B655D;font-weight:300"><span class="i18n-ko">불연 Class A · 방수 · 디지털 프린팅 커스텀 디자인</span><span class="i18n-en">Class A · waterproof · fully custom print</span></p>
             <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
           </div>
         </a>
-        <a href="product-lineboard.html" style="background:#fff;display:block">
+<a href="product-lineboard.html" style="background:#fff;display:block">
           <img src="img-prod-lineboard.jpg" alt="SD 라인보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
-          <div style="padding:26px 28px 30px">
-            <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px">
-              <span style="font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:0.22em;color:#A79E92">03</span>
-              <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4E7B93">Ceiling & wall</span>
-            </div>
-            <h2 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:21px"><span class="i18n-ko">SD 라인보드</span><span class="i18n-en">SD Line Board</span></h2>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.08em;color:#8A8378;margin-bottom:14px">Linear Profile Board</div>
+          <div style="padding:24px 26px 28px">
+            <div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4E7B93;margin-bottom:12px">Ceiling & wall</div>
+            <h3 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px"><span class="i18n-ko">SD 라인보드</span><span class="i18n-en">SD Line Board</span></h3>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.08em;color:#8A8378;margin-bottom:12px">Linear Profile Board</div>
             <p style="margin:0;font-size:13.5px;line-height:1.9;color:#6B655D;font-weight:300"><span class="i18n-ko">천장·복도에 정돈된 선형 리듬과 입체감</span><span class="i18n-en">Linear rhythm and relief for ceilings</span></p>
             <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
           </div>
         </a>
-        <a href="product-stile.html" style="background:#fff;display:block">
-          <img src="img-prod-stile.jpg" alt="LDW+ 스타일" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
-          <div style="padding:26px 28px 30px">
-            <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px">
-              <span style="font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:0.22em;color:#A79E92">04</span>
-              <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4E7B93">Flooring</span>
-            </div>
-            <h2 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:21px"><span class="i18n-ko">LDW+ 스타일</span><span class="i18n-en">LDW+ Stile</span></h2>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.08em;color:#8A8378;margin-bottom:14px">Hybrid Tile Flooring · NOX</div>
-            <p style="margin:0;font-size:13.5px;line-height:1.9;color:#6B655D;font-weight:300"><span class="i18n-ko">타일의 마감, 타일 없는 하자 · 충격음 4~7dB 감소</span><span class="i18n-en">Tile look without tile failures</span></p>
-            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
-          </div>
-        </a>
-        <a href="product-tembour.html" style="background:#fff;display:block">
+<a href="product-tembour.html" style="background:#fff;display:block">
           <img src="img-prod-tembour.jpg" alt="뉴인 템버보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
-          <div style="padding:26px 28px 30px">
-            <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px">
-              <span style="font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:0.22em;color:#A79E92">05</span>
-              <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4E7B93">Profile board</span>
-            </div>
-            <h2 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:21px"><span class="i18n-ko">뉴인 템버보드</span><span class="i18n-en">New;in Tembour Board</span></h2>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.08em;color:#8A8378;margin-bottom:14px">Fluted MDF Board</div>
+          <div style="padding:24px 26px 28px">
+            <div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4E7B93;margin-bottom:12px">Profile board</div>
+            <h3 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px"><span class="i18n-ko">뉴인 템버보드</span><span class="i18n-en">New;in Tembour Board</span></h3>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.08em;color:#8A8378;margin-bottom:12px">Fluted MDF Board</div>
             <p style="margin:0;font-size:13.5px;line-height:1.9;color:#6B655D;font-weight:300"><span class="i18n-ko">사각·원형 프로파일로 곡면 벽체까지 마감</span><span class="i18n-en">Rectangle and circle profiles, curves included</span></p>
             <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
           </div>
         </a>
-        <a href="product-lvt.html" style="background:#fff;display:block">
-          <img src="img-prod-doden.jpg" alt="도든 LVT" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
-          <div style="padding:26px 28px 30px">
-            <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px">
-              <span style="font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:0.22em;color:#A79E92">06</span>
-              <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4E7B93">Flooring</span>
-            </div>
-            <h2 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:21px"><span class="i18n-ko">도든 LVT</span><span class="i18n-en">Doden LVT</span></h2>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.08em;color:#8A8378;margin-bottom:14px">Resilient Flooring</div>
-            <p style="margin:0;font-size:13.5px;line-height:1.9;color:#6B655D;font-weight:300"><span class="i18n-ko">주거·상업 겸용, 다점포 표준 사양 반복 납품</span><span class="i18n-en">Residential and retail, supplied as a store standard</span></p>
-            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
-          </div>
-        </a>
-        <a href="product-board.html" style="background:#fff;display:block">
+<a href="product-board.html" style="background:#fff;display:block">
           <img src="img-proj-incheon-3.jpg" alt="마그네슘보드 · STOWALL" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
-          <div style="padding:26px 28px 30px">
-            <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px">
-              <span style="font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:0.22em;color:#A79E92">07</span>
-              <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4E7B93">Substrate</span>
-            </div>
-            <h2 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:21px"><span class="i18n-ko">마그네슘보드 · STOWALL</span><span class="i18n-en">Magnesium Board · STOWALL</span></h2>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.08em;color:#8A8378;margin-bottom:14px">Non-combustible Board</div>
+          <div style="padding:24px 26px 28px">
+            <div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4E7B93;margin-bottom:12px">Substrate</div>
+            <h3 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px"><span class="i18n-ko">마그네슘보드 · STOWALL</span><span class="i18n-en">Magnesium Board · STOWALL</span></h3>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.08em;color:#8A8378;margin-bottom:12px">Non-combustible Board</div>
             <p style="margin:0;font-size:13.5px;line-height:1.9;color:#6B655D;font-weight:300"><span class="i18n-ko">KFI 불연 인증 · 지정 필름 생산 · 석재 대체 벽장재</span><span class="i18n-en">KFI certified, custom film, stone alternative</span></p>
             <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
           </div>
         </a>
+        <a href="catalog.html#bulan" style="background:#fff;display:block">
+          <img src="t-bulan-2.jpg" alt="불연 불안타보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">불연</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">불연 불안타보드</h3>
+            <div style="font-size:12.5px;color:#8A8378">600×2440 / 1100×2800 · 8mm</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+        <a href="catalog.html#wallboard" style="background:#fff;display:block">
+          <img src="t-wallboard-2.jpg" alt="방염 벽보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">방염</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">방염 벽보드</h3>
+            <div style="font-size:12.5px;color:#8A8378">600×2400 / 600×2800 · 8mm</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+        <a href="catalog.html#blockluba" style="background:#fff;display:block">
+          <img src="t-blockluba-1.jpg" alt="방염 블럭루바보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">방염</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">방염 블럭루바보드</h3>
+            <div style="font-size:12.5px;color:#8A8378">145×2400×15 / 155×2400×8</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+        <a href="catalog.html#insul" style="background:#fff;display:block">
+          <img src="t-insul-2.jpg" alt="복합단열보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">단열</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">복합단열보드</h3>
+            <div style="font-size:12.5px;color:#8A8378">900×2400 / 1220×2440 · 12·21·31mm</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+      </div>
     </div>
-    <a href="catalog.html" class="sdx5" style="margin-top:40px;background:#14161A;color:#F7F5F2;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding:clamp(28px,4vw,40px) clamp(24px,4vw,40px)">
-      <span>
-        <span style="display:block;font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:#83C4D8;margin-bottom:12px">Catalogue</span>
-        <span style="display:block;font-family:'Noto Serif KR',serif;font-weight:300;font-size:24px;margin-bottom:8px"><span class="i18n-ko">내·외장재 카탈로그</span><span class="i18n-en">Interior &amp; exterior catalogue</span></span>
-        <span style="display:block;font-size:13px;color:rgba(255,255,255,0.6);line-height:1.8"><span class="i18n-ko">벽자재·방음재·실외자재·건식온돌 22개 품목 · ver.260707<br />품목을 선택하면 규격·색상과 시공 정보를 함께 보실 수 있습니다.</span><span class="i18n-en">22 items across wall, acoustic, exterior and heating lines · ver.260707.</span></span>
-      </span>
-      <span style="font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#83C4D8;white-space:nowrap"><span class="i18n-ko">카탈로그 보기</span><span class="i18n-en">View</span> →</span>
-    </a>
+    <div data-pgroup="floor" style="margin-bottom:clamp(48px,6vw,72px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;padding-bottom:18px;border-bottom:1px solid rgba(20,22,26,0.14);margin-bottom:24px">
+        <h2 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(20px,2.2vw,26px)"><span class="i18n-ko">바닥</span><span class="i18n-en">Flooring</span></h2>
+        <span style="margin-left:auto;font-size:12.5px;color:#8A8378"><span class="i18n-ko">2개 품목</span><span class="i18n-en">2 items</span></span>
+      </div>
+      <div class="hairgrid prodgrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:1px">
+<a href="product-stile.html" style="background:#fff;display:block">
+          <img src="img-prod-stile.jpg" alt="LDW+ 스타일" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
+          <div style="padding:24px 26px 28px">
+            <div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4E7B93;margin-bottom:12px">Flooring</div>
+            <h3 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px"><span class="i18n-ko">LDW+ 스타일</span><span class="i18n-en">LDW+ Stile</span></h3>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.08em;color:#8A8378;margin-bottom:12px">Hybrid Tile Flooring · NOX</div>
+            <p style="margin:0;font-size:13.5px;line-height:1.9;color:#6B655D;font-weight:300"><span class="i18n-ko">타일의 마감, 타일 없는 하자 · 충격음 4~7dB 감소</span><span class="i18n-en">Tile look without tile failures</span></p>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+<a href="product-lvt.html" style="background:#fff;display:block">
+          <img src="img-prod-doden.jpg" alt="도든 LVT" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover" />
+          <div style="padding:24px 26px 28px">
+            <div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4E7B93;margin-bottom:12px">Flooring</div>
+            <h3 style="margin:0 0 6px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px"><span class="i18n-ko">도든 LVT</span><span class="i18n-en">Doden LVT</span></h3>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:0.08em;color:#8A8378;margin-bottom:12px">Resilient Flooring</div>
+            <p style="margin:0;font-size:13.5px;line-height:1.9;color:#6B655D;font-weight:300"><span class="i18n-ko">주거·상업 겸용, 다점포 표준 사양 반복 납품</span><span class="i18n-en">Residential and retail, supplied as a store standard</span></p>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div data-pgroup="acoustic" style="margin-bottom:clamp(48px,6vw,72px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;padding-bottom:18px;border-bottom:1px solid rgba(20,22,26,0.14);margin-bottom:24px">
+        <h2 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(20px,2.2vw,26px)"><span class="i18n-ko">방음 · 흡음</span><span class="i18n-en">Acoustic</span></h2>
+        <span style="margin-left:auto;font-size:12.5px;color:#8A8378"><span class="i18n-ko">10개 품목</span><span class="i18n-en">10 items</span></span>
+      </div>
+      <div class="hairgrid prodgrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:1px">
+        <a href="catalog.html#artboard" style="background:#fff;display:block">
+          <img src="t-artboard-1.jpg" alt="방염 아트보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">방염·흡음</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">방염 아트보드</h3>
+            <div style="font-size:12.5px;color:#8A8378">1220×2420 · 9mm</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+        <a href="catalog.html#perf" style="background:#fff;display:block">
+          <img src="t-perf-1.jpg" alt="아트 타공보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">흡음</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">아트 타공보드</h3>
+            <div style="font-size:12.5px;color:#8A8378">600×1200 · 9mm</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+        <a href="catalog.html#tembasound" style="background:#fff;display:block">
+          <img src="t-tembasound-1.jpg" alt="템바 사운드 보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">흡음</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">템바 사운드 보드</h3>
+            <div style="font-size:12.5px;color:#8A8378">600×2400 · 18mm</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+        <a href="catalog.html#mokmo" style="background:#fff;display:block">
+          <img src="t-mokmo-1.jpg" alt="준불연 · 방염 목모보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">준불연·방염</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">준불연 · 방염 목모보드</h3>
+            <div style="font-size:12.5px;color:#8A8378">600×1200 · 15T / 25T</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+        <a href="catalog.html#linetagong" style="background:#fff;display:block">
+          <img src="t-linetagong-1.jpg" alt="준불연 라인 · 단타공보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">준불연</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">준불연 라인 · 단타공보드</h3>
+            <div style="font-size:12.5px;color:#8A8378">600×2400 / 600×1200 / 197×2400 · 9mm</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+        <a href="catalog.html#temba" style="background:#fff;display:block">
+          <img src="t-temba-2.jpg" alt="준불연 템바 / 불연 템바" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">준불연·불연</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">준불연 템바 / 불연 템바</h3>
+            <div style="font-size:12.5px;color:#8A8378">210×2440×12 / 200×2440×8</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+        <a href="catalog.html#fabric" style="background:#fff;display:block">
+          <img src="t-fabric-2.jpg" alt="패브릭 보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">흡음</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">패브릭 보드</h3>
+            <div style="font-size:12.5px;color:#8A8378">600×600 · 9mm</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+        <a href="catalog.html#tembaheum" style="background:#fff;display:block">
+          <img src="t-tembaheum-1.jpg" alt="템바 흡음보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">흡음</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">템바 흡음보드</h3>
+            <div style="font-size:12.5px;color:#8A8378">600×1200 · 18mm</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+        <a href="catalog.html#bandal" style="background:#fff;display:block">
+          <img src="t-bandal-2.jpg" alt="방염 반달 보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">방염</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">방염 반달 보드</h3>
+            <div style="font-size:12.5px;color:#8A8378">1170×2420 · 9mm</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+        <a href="catalog.html#vcut" style="background:#fff;display:block">
+          <img src="t-vcut-1.jpg" alt="V커팅 보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">흡음</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">V커팅 보드</h3>
+            <div style="font-size:12.5px;color:#8A8378">600×600 · 9mm</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div data-pgroup="exterior" style="margin-bottom:clamp(48px,6vw,72px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;padding-bottom:18px;border-bottom:1px solid rgba(20,22,26,0.14);margin-bottom:24px">
+        <h2 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(20px,2.2vw,26px)"><span class="i18n-ko">실외</span><span class="i18n-en">Exterior</span></h2>
+        <span style="margin-left:auto;font-size:12.5px;color:#8A8378"><span class="i18n-ko">3개 품목</span><span class="i18n-en">3 items</span></span>
+      </div>
+      <div class="hairgrid prodgrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:1px">
+        <a href="catalog.html#deck" style="background:#fff;display:block">
+          <img src="t-deck-1.jpg" alt="합성데크 (합성목재)" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">실외 바닥재</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">합성데크 (합성목재)</h3>
+            <div style="font-size:12.5px;color:#8A8378">20T · 24T · 25T</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+        <a href="catalog.html#siding" style="background:#fff;display:block">
+          <img src="t-siding-1.jpg" alt="블럭사이딩 (내추럴 컬러)" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">실외 벽자재</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">블럭사이딩 (내추럴 컬러)</h3>
+            <div style="font-size:12.5px;color:#8A8378">26T · 220×3000 (유효폭 200)</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+        <a href="catalog.html#fence" style="background:#fff;display:block">
+          <img src="t-fence-1.jpg" alt="펜스보드" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">실외 펜스재</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">펜스보드</h3>
+            <div style="font-size:12.5px;color:#8A8378">AL포스트 68×68×1520</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div data-pgroup="heating" style="margin-bottom:clamp(48px,6vw,72px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;padding-bottom:18px;border-bottom:1px solid rgba(20,22,26,0.14);margin-bottom:24px">
+        <h2 style="margin:0;font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(20px,2.2vw,26px)"><span class="i18n-ko">난방</span><span class="i18n-en">Heating</span></h2>
+        <span style="margin-left:auto;font-size:12.5px;color:#8A8378"><span class="i18n-ko">1개 품목</span><span class="i18n-en">1 items</span></span>
+      </div>
+      <div class="hairgrid prodgrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:1px">
+        <a href="catalog.html#ondol" style="background:#fff;display:block">
+          <img src="t-ondol-7.jpg" alt="골드온돌판넬 건식난방 시스템" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;background:#EFEBE5" />
+          <div style="padding:24px 26px 28px">
+            <div style="margin-bottom:12px"><span style="font-size:10.5px;letter-spacing:0.14em;color:#4E7B93;border:1px solid rgba(78,123,147,0.3);padding:4px 9px">건식온돌</span></div>
+            <h3 style="margin:0 0 8px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:20px">골드온돌판넬 건식난방 시스템</h3>
+            <div style="font-size:12.5px;color:#8A8378">골드온수패널 1200×600×25T</div>
+            <div style="margin-top:18px;font-size:12px;letter-spacing:0.1em;color:#4E7B93"><span class="i18n-ko">상세 보기</span><span class="i18n-en">Detail</span> →</div>
+          </div>
+        </a>
+      </div>
+    </div>
   </section>
+  <script>
+  function prodTab(k,btn){var b=btn.parentNode.querySelectorAll('.gtab');for(var i=0;i<b.length;i++)b[i].classList.remove('gtab-on');btn.classList.add('gtab-on');var g=document.querySelectorAll('[data-pgroup]');for(var j=0;j<g.length;j++)g[j].style.display=(k==='all'||g[j].getAttribute('data-pgroup')===k)?'':'none';}
+  (function(){var h=(location.hash||'').slice(1);if(!h)return;var t=document.querySelector('[onclick="prodTab(\''+h+'\',this)"]');if(t)prodTab(h,t);})();
+  </script>
+
 
 <footer style="background:#14161A;color:rgba(237,234,229,0.7);padding:72px 0 44px">
     <div style="max-width:1100px;margin:0 auto;padding:0 clamp(18px,4vw,32px);display:flex;flex-wrap:wrap;justify-content:space-between;column-gap:clamp(24px,3vw,40px);row-gap:36px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,0.12)">
@@ -212,7 +394,6 @@
           <div style="height:30px;display:flex;align-items:center"><a href="company.html" style="color:rgba(237,234,229,0.7)"><span class="i18n-ko">회사소개</span><span class="i18n-en">About</span></a></div>
           <div style="height:30px;display:flex;align-items:center"><a href="products.html" style="color:rgba(237,234,229,0.7)"><span class="i18n-ko">제품</span><span class="i18n-en">Products</span></a></div>
           <div style="height:30px;display:flex;align-items:center"><a href="projects.html" style="color:rgba(237,234,229,0.7)"><span class="i18n-ko">납품실적</span><span class="i18n-en">Projects</span></a></div>
-          <div style="height:30px;display:flex;align-items:center"><a href="quality.html" style="color:rgba(237,234,229,0.7)"><span class="i18n-ko">인증·시공</span><span class="i18n-en">Quality</span></a></div>
         </div>
       </div>
       <div style="flex:0 0 auto;font-size:13px;height:176px;display:flex;flex-direction:column">
